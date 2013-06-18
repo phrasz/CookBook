@@ -1,0 +1,153 @@
+# $Id: Makefile.common,v 1.22 2006/09/06 12:53:52 roca Exp $
+#
+# Makefile common declarations includes compiler version options ...
+# Edit as appropriate...
+#
+
+# WARNING: "ifeq" is a GNU gmake instruction!
+# On solaris 2.X, using /usr/ccs/bin/make instead creates an error:
+# "Unexpected end of line seen"
+
+
+# optimisations options for the whole project. 
+
+# use debug mode
+#CFLAGS+=-DDEBUG -g -fno-inline
+# use profiling 
+#CFLAGS+=-pg
+# use compiler optimisations
+#CFLAGS+= -O1
+CFLAGS+= -O2
+
+
+###### OS Dependant Variables ######
+
+# edit as appropriate...
+
+# Which OS ?
+#
+# automatic system detection...
+# NB: command shell replaces back quotes of script shells
+#
+SYSTEM = $(shell uname -s)
+
+
+# changes the default compiler used 
+
+COMPILER= default
+#COMPILER= gcc-3.4
+#COMPILER= IA-64
+#COMPILER= INSURE
+#COMPILER= ARM
+
+ifeq (${SYSTEM},Linux)
+	OS = linux
+endif
+ifeq (${SYSTEM},SunOS)
+	OS = solaris
+endif
+ifeq (${SYSTEM},FreeBSD)
+	OS = freebsd
+endif
+ifeq (${SYSTEM},CYGWIN_NT-5.1)
+       OS = cygwin
+#      cygwin uses the bindir of linux ..
+#      BINDIR=./bin/linux
+endif
+
+
+#
+# and the old way (e.g. if the above lines do not work!)
+#
+#OS = linux
+#OS = solaris
+#OS = freebsd
+
+
+# OS specific variables and tools
+#
+ifeq (${OS},linux)
+	OSFLAGS = -DLINUX
+# 	Which compiler?
+#	 NB: use -Wall for compilation warnings with gcc
+
+ifeq (${COMPILER},gcc-3.4)
+	CFLAGS+=-Wall
+	LDFLAGS+=-Wall
+	CC = g++-3.4.4
+	LD = g++-3.4.4
+endif
+
+# IA-64
+ifeq ($(COMPILER),IA-64)
+	CFLAGS+=-Wall
+	LDFLAGS+=-Wall
+	CC = ecc
+	LD = ecc
+endif
+
+# INSURE
+ifeq ($(COMPILER),INSURE)
+	CC = /softs/stow/insure++-7.0/bin.linux2/insure
+	LD = /softs/stow/insure++-7.0/bin.linux2/insure
+	#CC = /softs/stow/insure++-6.1.3/bin.linux2/insure
+	#LD = /softs/stow/insure++-6.1.3/bin.linux2/insure
+endif
+
+# ARM
+ifeq ($(COMPILER),ARM)
+
+	CC = /usr/local/arm/bin/arm-linux-g++
+	LD = /usr/local/arm/bin/arm-linux-g++	
+endif
+
+ifeq ($(COMPILER),default) 
+	CFLAGS+=-Wall
+	LDFLAGS+=-Wall
+	CC = g++
+	LD = g++
+endif
+
+# endif OS 
+endif
+
+ 
+ifeq (${OS},cygwin)
+       OSFLAGS = -DLINUX
+       CC = g++ -Wall
+       LD = g++ -Wall
+       MAKE=make
+endif
+
+ifeq (${OS},solaris)
+	# NB: __EXTENSIONS__ needed by Solaris 2.5.1
+	# OSFLAGS = -DSOLARIS -D__EXTENSIONS__
+	OSFLAGS = -DSOLARIS
+	# Which compiler?
+	# Sun's compiler is required if this FEC codec is to be linked with
+	# MCLv3 fcast/flute tools that both require Sun's C/C++ compiler.
+	# Otherwise using g++ is possible too.
+	CC = /opt/SUNWspro/bin/CC
+	LD = /opt/SUNWspro/bin/CC 
+	#CC = g++
+	#LD = g++
+endif
+ifeq (${OS},freebsd)
+	OSFLAGS = -DFREEBSD -I/usr/include/g++ -I/usr/include/c++/3.3
+	# Which compiler?
+	# NB: use -Wall for compilation warnings with gcc
+	#
+	CC = g++ -Wall
+	LD = g++ -Wall
+endif
+
+
+CFLAGS+=${OSFLAGS}
+
+# Which associated tools ?
+AR = ar
+#AR = /usr/local/arm/bin/arm-linux-ar
+RANLIB = ranlib
+#RANLIB = /usr/local/arm/bin/arm-linux-ranlib
+DEPEND = makedepend
+

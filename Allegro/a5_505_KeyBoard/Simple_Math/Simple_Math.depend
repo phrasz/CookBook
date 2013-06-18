@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1330155232 source:d:\my programing\simplemath\simple_math\main.cpp
+	<stdio.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_native_dialog.h>
+
+1330158832 source:d:\my programing\a5_505_keyboard\simple_math\main.cpp
+	<stdio.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_native_dialog.h>
+

@@ -1,0 +1,454 @@
+Content-type: text/html
+
+<HTML><HEAD><TITLE>Manpage of LDPCFecScheme</TITLE>
+</HEAD><BODY>
+<H1>LDPCFecScheme</H1>
+Section: C Library Functions (3)<BR>Updated: 6 Sep 2006<BR><A HREF="#index">Index</A>
+<A HREF="http://localhost/cgi-bin/man/man2html">Return to Main Contents</A><HR>
+
+
+
+<A NAME="lbAB">&nbsp;</A>
+<H2>NAME</H2>
+
+LDPCFecScheme - 
+<A NAME="lbAC">&nbsp;</A>
+<H2>SYNOPSIS</H2>
+
+<BR>
+
+<P>
+
+#include &lt;<A HREF="file:/usr/include/ldpc_scheme.h">ldpc_scheme.h</A>&gt;
+<P>
+
+Inherits <B>LDPCFecSession</B>.
+<P>
+
+<A NAME="lbAD">&nbsp;</A>
+<H3>Public Member Functions</H3>
+
+<P>
+
+<BR>
+
+<B>LDPCFecScheme</B> ()
+
+<BR>
+
+<BR>
+
+<B>~LDPCFecScheme</B> ()
+
+<BR>
+
+<BR>
+
+<B>ldpc_error_status</B> <B>DetermineSymbolSize</B> (INT64 objectSize, int pktSize, int *symbolSize, int *nbSourceSymbols)
+
+<BR>
+
+<BR>
+
+<B>ldpc_error_status</B> <B>InitScheme</B> (int symbolSize, int pktSize)
+
+<BR>
+
+<BR>
+
+<B>ldpc_error_status</B> <B>BuildPkt</B> (int pktIdx, void **pktBuffer, void *symbol_canvas[], int *ESIofFirstSymbol)
+
+<BR>
+
+<BR>
+
+<B>ldpc_error_status</B> <B>DecomposePkt</B> (void *pktBuffer, int ESIofFirstSymbol, void **GeneratedSymbols[], int *ESIofSymbols[])
+
+<BR>
+
+<BR>
+
+<B>ldpc_error_status</B> <B>DecodingStepWithPkt</B> (void *symbol_canvas[], void *pktBuffer, int ESIofFirstSymbol, bool store_symbol)
+
+<BR>
+
+<BR>
+
+<B>ldpc_error_status</B> <B>DecodingStepWithPkt</B> (void *symbol_canvas[], void *pktBuffer, int ESIofFirstSymbol)
+
+<BR>
+
+<BR>
+
+int <B>getNbSymbolsPerPkt</B> (void)
+
+<BR>
+
+<BR>
+
+int <B>getNbSourcePkts</B> (void)
+
+<BR>
+
+<BR>
+
+int <B>getNbParityPkts</B> (void)
+
+<BR>
+
+<BR>
+
+int <B>getNbSourceSymbols</B> (void)
+
+<BR>
+
+<BR>
+
+int <B>getNbParitySymbols</B> (void)
+
+<BR>
+
+
+<A NAME="lbAE">&nbsp;</A>
+<H2>Detailed Description</H2>
+
+<P>
+
+Class that implements parts of the LDPC-Staircase/Triangle FEC Scheme, as defined in draft-ietf-rmt-bb-fec-ldpc-01.txt (or later version). It defines the notion of packet, i.e. the grouping of several symbols in the same transmission unit. Depending on the initialization, the LDPCFECScheme class can either define internally the optimal number of symbols per packet, or take it as a parameter. Using this class makes the symbol(s) &lt;=&gt; packet mapping almost transparent to the user. In that case, packet creation (SENDER) and packet processing (RECEIVER) are completely managed by this class (e.g. there is no need to call the LDPCFECSession::DecodingStepWithSymbol() method any more).
+<P>
+
+When <B>LDPCFecSession</B> and LDPCFecScheme are both used, the <B>LDPCFecSession</B> MUST be initialized first (with <B>InitSession()</B>), THEN the LDPCFecScheme (with <B>InitScheme()</B>). 
+<P>
+
+<A NAME="lbAF">&nbsp;</A>
+<H2>Constructor &amp; Destructor Documentation</H2>
+
+<P>
+
+<A NAME="lbAG">&nbsp;</A>
+<H3>LDPCFecScheme::LDPCFecScheme ()</H3>
+
+<P>
+
+LDPCFecScheme Constructor and Destructor.
+<A NAME="lbAH">&nbsp;</A>
+<H3>LDPCFecScheme::~<B>LDPCFecScheme</B> ()</H3>
+
+<P>
+
+<A NAME="lbAI">&nbsp;</A>
+<H2>Member Function Documentation</H2>
+
+<P>
+
+<A NAME="lbAJ">&nbsp;</A>
+<H3><B>ldpc_error_status</B> LDPCFecScheme::DetermineSymbolSize (INT64 objectSize, int pktSize, int * symbolSize, int * nbSourceSymbols)</H3>
+
+<P>
+
+Determine the optimal symbol size when the object size and packet size are both known.
+<P>
+
+This function defines the optimal symbol size in order to maximize the erasure recovery efficiency. The actual number of symbols per packet can then be retrieved by means of the <B>getNbSymbolsPerPkt()</B> function. This value must be an integer, i.e. that the packet size must be a multiple of the resulting symbol size (which also depends on the object size). It usually means that the packet size must be a multiple of a certain power of 2. If not possible, an error is returned.
+<P>
+
+When the object size is not multiple of the symbol size, it is left to the application to handle the possible padding of the last source symbol.
+<P>
+
+<B>Parameters:</B>
+<DL COMPACT><DT><DD>
+<I>objectSize</I> (IN) the object size (bytes). 
+<BR>
+
+<I>pktSize</I> (IN) the packet size (bytes). Depending on the number of symbols per packet, the packet size must sometimes be a multiple of 4 or 8. 
+<BR>
+
+<I>symbolSize</I> (OUT) opimal symbol size determined by this function. 
+<BR>
+
+<I>nbSourceSymbols</I> (OUT) corresponding number of source symbols. 
+</DL>
+
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Completion status (LDPC_OK or LDPC_ERROR).
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAK">&nbsp;</A>
+<H3><B>ldpc_error_status</B> LDPCFecScheme::InitScheme (int symbolSize, int pktSize)</H3>
+
+<P>
+
+Initialize the LDPC scheme. Note that the packet size must be a multiple of the symbol size. 
+<P>
+
+<B>Parameters:</B>
+<DL COMPACT><DT><DD>
+<I>symbolSize</I> (IN) the symbol size, probably calculated by the <B>DetermineSymbolSize()</B> function above. 
+<BR>
+
+<I>pktSize</I> (IN) the packet size (bytes). 
+</DL>
+
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Completion status (LDPC_OK or LDPC_ERROR).
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAL">&nbsp;</A>
+<H3><B>ldpc_error_status</B> LDPCFecScheme::BuildPkt (int pktIdx, void ** pktBuffer, void * symbol_canvas[], int * ESIofFirstSymbol)</H3>
+
+<P>
+
+Build the packet of the index from an appropriate number of symbols. Used by a sender. There are always <B>getNbSymbolsPerPkt()</B> symbols per packet, even when the number of source or repair symbols are not multiple of the number of symbols per packet. Note that only homogeneous packets are created, i.e. packets consisting either of source symbols (AKA source packets), or or of repair symbols (AKA repair packets).
+<P>
+
+<B>Parameters:</B>
+<DL COMPACT><DT><DD>
+<I>pktIdx</I> (IN) Index of the packet to build, in [0; getNbPkts() - 1] range. 
+<BR>
+
+<I>pktBuffer</I> Data buffer where the packet should be written. 
+<BR>
+
+<I>ESIofFirstSymbol</I> (OUT) ESI of the first symbol chosen to be included in this packet. 
+</DL>
+
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Completion status (LDPC_OK or LDPC_ERROR).
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAM">&nbsp;</A>
+<H3><B>ldpc_error_status</B> LDPCFecScheme::DecomposePkt (void * pktBuffer, int ESIofFirstSymbol, void ** GeneratedSymbols[], int * ESIofSymbols[])</H3>
+
+<P>
+
+Split a received packet into the set of its constituting symbols. 
+<P>
+
+<B>Parameters:</B>
+<DL COMPACT><DT><DD>
+<I>pktBuffer</I> (IN) Data buffer containing the packet received. 
+<BR>
+
+<I>ESIofFirstSymbol</I> (IN) ESI of the first symbol of the packet. 
+<BR>
+
+<I>GeneratedSymbols[]</I> (OUT) table containing pointers to all the symbols of the packet, including the first one. There are always <B>getNbSymbolsPerPkt()</B> entries. This table is allocated by the function and must be free'ed by the caller. 
+<BR>
+
+<I>ESIofSymbols</I> (OUT) table containing the ESI of all the symbols of the packet, including the first one. There are always <B>getNbSymbolsPerPkt()</B> entries. This table is allocated by the function and must be free'ed by the caller. 
+</DL>
+
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Completion status (LDPC_OK or LDPC_ERROR).
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAN">&nbsp;</A>
+<H3><B>ldpc_error_status</B> LDPCFecScheme::DecodingStepWithPkt (void * symbol_canvas[], void * pktBuffer, int ESIofFirstSymbol, bool store_symbol)</H3>
+
+<P>
+
+Perform a new decoding step thanks to the newly received packet. This is the same as <B>LDPCFecSession::DecodingStepWithSymbol()</B> but with a packet as input rather than a symbol. 
+<P>
+
+<B>Parameters:</B>
+<DL COMPACT><DT><DD>
+<I>symbol_canvas</I> (IN-OUT) Global array of received or rebuilt source symbols (parity symbols need not be stored here). This is a table of k pointers to buffers. This array must be cleared (memset(0)) upon the first call to this function. It will be automatically updated, with pointers to symbols received or decoded, by this function. 
+<BR>
+
+<I>pktBuffer</I> (IN) Pointer to the buffer containing the new packet. 
+<BR>
+
+<I>ESIofFirstSymbol</I> (IN) ESI of the first symbol of the packet. 
+<BR>
+
+<I>store_symbol</I> (IN) true if the function needs to allocate memory, copy the symbol content in it, and call any required callback. This is typically done when this function is called recursively, for newly decoded symbols, or under special circunstances (e.g. perftool). 
+</DL>
+
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Completion status (LDPC_OK or LDPC_ERROR).
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAO">&nbsp;</A>
+<H3><B>ldpc_error_status</B> LDPCFecScheme::DecodingStepWithPkt (void * symbol_canvas[], void * pktBuffer, int ESIofFirstSymbol)</H3>
+
+<P>
+
+Perform a new decoding step thanks to the newly received packet. Same as the other DecodingStepWithSymbol method, without the store_symbol argument (prefered solution). 
+<P>
+
+<B>Parameters:</B>
+<DL COMPACT><DT><DD>
+<I>symbol_canvas</I> (IN-OUT) Global array of received or rebuilt source symbols (parity symbols need not be stored here). This is a table of k pointers to buffers. This array must be cleared (memset(0)) upon the first call to this function. It will be automatically updated, with pointers to symbols received or decoded, by this function. 
+<BR>
+
+<I>pktBuffer</I> (IN) Pointer to the buffer containing the new packet. 
+<BR>
+
+<I>ESIofFirstSymbol</I> (IN) ESI of the first symbol of the packet.
+</DL>
+
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Completion status (LDPC_OK or LDPC_ERROR).
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAP">&nbsp;</A>
+<H3>int LDPCFecScheme::getNbSymbolsPerPkt (void) [inline]</H3>
+
+<P>
+
+Return the number of symbols that are grouped in the same packet (AKA symbol group). There are always this number of symbols per packet, even when the number of source or repair symbols is not multiple of the number of symbols per packet. 
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Number of symbols grouped in any packet.
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAQ">&nbsp;</A>
+<H3>int LDPCFecScheme::getNbSourcePkts (void) [inline]</H3>
+
+<P>
+
+Return the number of source packets (i.e. consisting only of source symbols). It might differ from the number of source symbols since several symbols can be grouped in the same packet. 
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Number of source packets.
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAR">&nbsp;</A>
+<H3>int LDPCFecScheme::getNbParityPkts (void) [inline]</H3>
+
+<P>
+
+Return the number of parity packets (i.e. consisting only of parity symbols). It might differ from the number of parity symbols since several symbols can be grouped in the same packet. 
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Number of parity packets.
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAS">&nbsp;</A>
+<H3>int LDPCFecScheme::getNbSourceSymbols (void) [inline]</H3>
+
+<P>
+
+Return the number of source symbols It might differ from the number of parity packets since several symbols can be grouped in the same packet. 
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Number of parity packets.
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAT">&nbsp;</A>
+<H3>int LDPCFecScheme::getNbParitySymbols (void) [inline]</H3>
+
+<P>
+
+Return the number of parity symbols It might differ from the number of parity packets since several symbols can be grouped in the same packet. 
+<P>
+
+<B>Returns:</B>
+<DL COMPACT><DT><DD>
+Number of parity packets.
+</DL>
+
+<P>
+
+<P>
+<A NAME="lbAU">&nbsp;</A>
+<H2>Author</H2>
+
+<P>
+
+Generated automatically by Doxygen for ldpc from the source code.
+<P>
+
+<HR>
+<A NAME="index">&nbsp;</A><H2>Index</H2>
+<DL>
+<DT><A HREF="#lbAB">NAME</A><DD>
+<DT><A HREF="#lbAC">SYNOPSIS</A><DD>
+<DL>
+<DT><A HREF="#lbAD">Public Member Functions</A><DD>
+</DL>
+<DT><A HREF="#lbAE">Detailed Description</A><DD>
+<DT><A HREF="#lbAF">Constructor &amp; Destructor Documentation</A><DD>
+<DL>
+<DT><A HREF="#lbAG">LDPCFecScheme::LDPCFecScheme ()</A><DD>
+<DT><A HREF="#lbAH">LDPCFecScheme::~<B>LDPCFecScheme</B> ()</A><DD>
+</DL>
+<DT><A HREF="#lbAI">Member Function Documentation</A><DD>
+<DL>
+<DT><A HREF="#lbAJ"><B>ldpc_error_status</B> LDPCFecScheme::DetermineSymbolSize (INT64 objectSize, int pktSize, int * symbolSize, int * nbSourceSymbols)</A><DD>
+<DT><A HREF="#lbAK"><B>ldpc_error_status</B> LDPCFecScheme::InitScheme (int symbolSize, int pktSize)</A><DD>
+<DT><A HREF="#lbAL"><B>ldpc_error_status</B> LDPCFecScheme::BuildPkt (int pktIdx, void ** pktBuffer, void * symbol_canvas[], int * ESIofFirstSymbol)</A><DD>
+<DT><A HREF="#lbAM"><B>ldpc_error_status</B> LDPCFecScheme::DecomposePkt (void * pktBuffer, int ESIofFirstSymbol, void ** GeneratedSymbols[], int * ESIofSymbols[])</A><DD>
+<DT><A HREF="#lbAN"><B>ldpc_error_status</B> LDPCFecScheme::DecodingStepWithPkt (void * symbol_canvas[], void * pktBuffer, int ESIofFirstSymbol, bool store_symbol)</A><DD>
+<DT><A HREF="#lbAO"><B>ldpc_error_status</B> LDPCFecScheme::DecodingStepWithPkt (void * symbol_canvas[], void * pktBuffer, int ESIofFirstSymbol)</A><DD>
+<DT><A HREF="#lbAP">int LDPCFecScheme::getNbSymbolsPerPkt (void) [inline]</A><DD>
+<DT><A HREF="#lbAQ">int LDPCFecScheme::getNbSourcePkts (void) [inline]</A><DD>
+<DT><A HREF="#lbAR">int LDPCFecScheme::getNbParityPkts (void) [inline]</A><DD>
+<DT><A HREF="#lbAS">int LDPCFecScheme::getNbSourceSymbols (void) [inline]</A><DD>
+<DT><A HREF="#lbAT">int LDPCFecScheme::getNbParitySymbols (void) [inline]</A><DD>
+</DL>
+<DT><A HREF="#lbAU">Author</A><DD>
+</DL>
+<HR>
+This document was created by
+<A HREF="http://localhost/cgi-bin/man/man2html">man2html</A>,
+using the manual pages.<BR>
+Time: 15:04:43 GMT, September 06, 2006
+</BODY>
+</HTML>

@@ -1,0 +1,64 @@
+Must do:
+
+- WIN32: define a type for __int64 and/or long long int, possibly
+  using <stdint.h> (POSIX compliant, does windows have this?) to make
+  a portable solution for the long long int code. Grrrr, Micro$oft!
+
+  -> Done, except for testing if the MSVC detection code works, and I
+     am not sure how to do an unsigned __int64 in MSVC.
+
+- Proper installation in Makefile with installation in system
+  directories, if desired.
+
+- Windows project files updated, + installation instructions
+  (everything in 1 dir is easiest here)
+
+- Binaries compiled, everything uploaded to allegro.cc and my
+  website. Make a small website with screenshots.
+
+- Portability tests in general. Build and run on at least
+  windows/msvc/mingw, linux, DOS/DJGPP. Find out if the mkdir code in
+  file.cpp is portable on platforms like borland.
+
+Wishlist:
+
+- a high score list, or at least a list of old finished games. This
+  requires input of player names if I want to do it properly, and
+  therefore another dialog.
+
+- sound, if I can come up with a good sound for placing stones and
+  flipping stones. I don't really think so, but who knows. Spoken text
+  (Game Over, etc) might be fun.
+
+  -> partially done, some obvious error messages were removed and
+     replaced by a simple 'beep'.
+
+- a gameclock, and the option to set a limited amount of thinking time
+  for each player. Go through your time -> you loose.
+
+- Some decent matches against multiple othello programs would be
+  nice. Kreversi wins at ply 4, but looses at ply 6. I still need to
+  try out what happens at the highest ply level. Ryxx (?) othello
+  lost, according to Richard. Gnome othello is no challenge, even I
+  can win from that at it's most difficult setting.  Xreversi seems to
+  be a decent program (minimax algorithm, corner and edge patterns)
+  but it either has a bug or a faulty scoring algorithm, because my
+  program (and myself, sort of) manages to win in the endgame,
+  probably because xreversi doesn't switch to counting stones near the
+  end of the game.
+
+- Mention the program to the author of the (french) reversi website,
+  who keeps a list of reversi games. I hope to get him to include this
+  one, considering iagno and kreversi are on there that should be
+  possible.
+
+- Learn to beat my own program at ply 8!
+
+Very far future:
+
+- pattern recognition and opening books would be cool to make to
+  improve the playing strength of this game, but considering it
+  already beats the *&(^*& out of me at ply 4, it is pretty hard for
+  me to estimate when the program is improving or becoming worse in
+  playing strength. This will require some more knowledge and examples
+  about othello, how to play it and how to write computer algorithms.

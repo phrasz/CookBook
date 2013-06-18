@@ -1,0 +1,40 @@
+#include <allegro.h>
+#include <stdio.h>
+#include "stones.h"
+
+int main()
+{
+    allegro_init();
+    set_color_depth(24);
+    set_gfx_mode(GFX_AUTODETECT, 640, 480, 0, 0);
+    
+    DATAFILE *stonedat = load_datafile("othello24.dat");
+    if (!stonedat)
+    {
+	allegro_message("Could not load datafile 'othello.dat'.\n");
+	return 0;
+    }
+
+    for (int i = 0; i <= 16; i++)
+    {
+	BITMAP *bmp = (BITMAP *)(stonedat[i].dat);
+
+	for (int x = 0; x < bmp->w; x++)
+	{
+	    for (int y = 0; y < bmp->h; y++)
+	    {
+		int c = getpixel(bmp, x, y);
+
+		if ((getr(c) < 10) && (getb(c) < 10) && (getg(c) < 10))
+		    putpixel(bmp, x, y, makecol(255, 0, 255));
+	    }
+	}
+
+	char buf[80];
+	sprintf(buf, "stone-%02d.bmp", i);
+	save_bitmap(buf, bmp, NULL);
+    }
+
+    return 0;
+}
+END_OF_MAIN();

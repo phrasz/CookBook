@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1342753596 source:d:\my programing\tcp\tcp_client\main.c
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<fcntl.h>
+	<netdb.h>
+

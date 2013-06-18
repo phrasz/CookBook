@@ -1,0 +1,151 @@
+Othello (Reversi) Version 1.9.3
+
+This is a prerelease of version 2.0. A couple things remain to be done
+(see the TODO file) before it will be released as version 2.0, mainly
+portability testing. A wishlist with things I might add before or
+after 2.0 is also included in the TODO file.
+
+This version should already be stable, it's been tested rather
+extensively in linux. Please try it and inform me of any problems or
+requests you might have. Let me know what you think of it!
+
+Hein Zelle,     hein@icce.rug.nl
+                http://www.icce.rug.nl/~hein
+
+
+-- OBTAINING --
+
+You've obviously found a copy of the program, but in case you want to
+check for a new version (please do so until 2.0 comes out), you can
+find the latest version at
+
+     http://www.icce.rug.nl/~hein/programs.html#othello
+
+
+-- REQUIREMENTS --
+
+Allegro, version 4.0 and up should work fine (tested with 4.0.3 and
+4.1.8). Earlier versions may or may not work. Get it at
+http://alleg.sourceforge.net .
+
+Othello is written in C++, so you need a C++ compiler to build it. It
+was tested with g++ (2.96, 3.2.1) and MSVC (6.0).
+
+A videocard / monitor that can handle high/true color at a resolution
+of 800x600 pixels. Allegro is pretty clever about choosing a video
+mode, so you should be ok with any modern display.
+
+
+-- gcc / djgpp / mingw builds --
+
+Unix/Linux:
+
+Unix users can just type 'make' and hopefully compile the program
+without further modifications, provided they have g++.
+
+Dos/DJGPP:
+
+Dos users will need to change the LIBS line and the CPPFLAGS line in
+the makefile, just uncomment the appropriate DJGPP lines. The makefile
+may need a '/' replaced by a '\' here and there. Also, you will
+probably need to replace 'g++' by gcc, and add the appropriate c++
+library to the LIBS variable.
+
+
+-- MSVC builds --
+
+Windows users: this release _should_ build without modifications on
+windows, but I am not able to test it here due to a lack of a windows
+platform. The only point of doubt is if the definition of 
+
+   typedef unsigned __int64 uint64_t
+
+in longlong.h should be changed into something like
+
+   typedef __uint64 uint64_t
+
+but as mentioned above, I can't test that. If you manage to build it
+under windows, please be so kind to send me your project file so I can
+include it in a future release. An earlier version was already built
+and tested by Richard Prak using MSVC, so there should be little or no
+problems.
+
+
+-- Installation / Running --
+
+The program lacks a decent installation script sofar, therefore it can
+only run from the directory where the datafiles are located. If you
+just run it from the directory where you build it it will work. If you
+want to install it elsewhere, make a directory 'othello' and copy the
+executable plus the four data files, stones.dat, lucida18.dat,
+sound.dat, graphics.dat to that directory. Run it from that directory.
+
+If Othello finds a HOME variable (under unix, typically), it will try
+to create a $HOME/.othello directory to store configuration and save
+files in. If this HOME variable doesn't exist (Windows/DOS) it will
+put configuration and save files in the directory where the program is
+run.
+
+Undo, Redo and Hint buttons are located at the right side of the
+screen. Because the computer player likes to move again immediately
+after you do an undo, the game is paused for undo / redo
+operations. Unpause it using the play button to continue playing. Some
+confusion may arise from this, when things are not working (no hint is
+given or moves aren't accepted) check if the game is paused.
+
+The game menu can be reached by pressing escape. From this menu you
+can configure the computer player, and you may start a new game,
+resume the previous game, load an old game or save the current
+game. When a game is finished (game over is shown in the) it will
+automatically be saved as 'last.sav' so you can review it or store it
+elsewhere. The savefiles are ascii-text, so you can read (and edit)
+them with any editor. Beware that changing the savefile may cause it
+to not load properly anymore! The second half of the savefile is a log
+of the game, and can be used to replay the game or analyse it. Loading
+a completed game allows you to browse through it with the undo/redo
+buttons from beginning to end.
+
+
+-- Configuration --
+
+Most settings of the othello program can be changed in the options
+menu, and they are all automagically saved in the file othello.cfg
+(either in $HOME/.othello or in the program directory) when you leave
+the menu. Some options can only be set by editing this file however, so here is the full list of options you have available:
+
+[othello]
+computer_player_1 = 0
+computer_player_2 = 1
+ply_level = 3
+who_starts = 1
+animations = 1
+
+Computer_player_1/2 indicate which player is handled by the computer
+(1) and which is handled by a human (0). By default the computer is
+player 2. 
+
+The ply level is the amount of moves the computer player
+will look ahead: if it is set to 1, the computer will try all possible
+moves, evaluate the outcome, and look no further. At ply 2 it will
+also evaluate the opponents move after that, and so on and so forth.
+
+The who_starts variable indicates which player begins the game, this
+is useful when playing against other othello programs that do not
+start with the player which has the left bottom and right top stone. I
+am not sure what the official rule is, but www.itsyourturn.com starts
+like that, and I have copied them. If you want to switch, set this
+variable to 2.
+
+The animations variable can be set to 0 to disable the animated
+flipping of the stones. (You don't like pancakes?)
+
+-- COPYRIGHT --
+
+This software is free, you may use it as you wish. If you distribute
+it (be it modified or in the original form) please be so kind to
+mention my name in the credits and to leave a pointer to the original
+website (see under OBTAINING). 
+
+If you modify the program, please let me know about it! I am always
+interested in including improvements, additions and bugfixes, and any
+ideas or suggestions you may have are very welcome.

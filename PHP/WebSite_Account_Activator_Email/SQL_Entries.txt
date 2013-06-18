@@ -1,0 +1,6 @@
+CREATE TABLE users (
+	email varchar(255) NOT NULL,
+	created _on DATETIME NOT NULL,
+	verify_string VARCHAR(16) NOT NULL,
+	verified TINYINT UNSIGNED
+);

@@ -1,0 +1,12 @@
+#!/bin/bash
+#ls -la >> temp_array_ex
+echo "Looking for files from MAY"
+lines=`ls -al | grep May | wc -l`
+echo "Lines to Process: $lines"
+#rm temp_array_ex
+file_name_array[0]=""
+
+for (( i=0; i<$lines; i++ ));
+do
+  {file_name_array[$i]=}
+done

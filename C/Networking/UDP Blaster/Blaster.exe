@@ -1,0 +1,143 @@
+	.file	"blast.c"
+	.intel_syntax noprefix
+	.def	___main;	.scl	2;	.type	32;	.endef
+	.section .rdata,"dr"
+LC0:
+	.ascii "127.0.0.1\0"
+	.align 4
+LC1:
+	.ascii "Blasting %d messages of size %d bytes to %s... \12\0"
+	.align 4
+LC5:
+	.ascii "Done.  Measured data rate = %f Mb/s \12\0"
+	.section	.text.startup,"x"
+	.p2align 2,,3
+	.globl	_main
+	.def	_main;	.scl	2;	.type	32;	.endef
+_main:
+LFB21:
+	.cfi_startproc
+	lea	ecx, [esp+4]
+	.cfi_def_cfa 1, 0
+	and	esp, -16
+	push	DWORD PTR [ecx-4]
+	push	ebp
+	mov	ebp, esp
+	.cfi_escape 0x10,0x5,0x2,0x75,0
+	push	edi
+	push	esi
+	push	ebx
+	push	ecx
+	.cfi_escape 0xf,0x3,0x75,0x70,0x6
+	.cfi_escape 0x10,0x3,0x2,0x75,0x74
+	.cfi_escape 0x10,0x6,0x2,0x75,0x78
+	.cfi_escape 0x10,0x7,0x2,0x75,0x7c
+	sub	esp, 1512
+	call	___main
+	lea	eax, [ebp-464]
+	mov	DWORD PTR [esp+4], eax
+	mov	DWORD PTR [esp], 257
+	call	_WSAStartup@8
+	sub	esp, 8
+	mov	DWORD PTR [esp+8], 0
+	mov	DWORD PTR [esp+4], 2
+	mov	DWORD PTR [esp], 2
+	call	_socket@12
+	sub	esp, 12
+	mov	edi, eax
+	mov	WORD PTR [ebp-64], 2
+	mov	DWORD PTR [esp], 1050
+	call	_htons@4
+	push	edx
+	mov	WORD PTR [ebp-62], ax
+	mov	DWORD PTR [esp], OFFSET FLAT:LC0
+	call	_inet_addr@4
+	push	ecx
+	mov	DWORD PTR [ebp-60], eax
+	xor	eax, eax
+	lea	esi, [ebp-1488]
+	.p2align 2,,3
+L2:
+	mov	BYTE PTR [esi+eax], 85
+	inc	eax
+	cmp	eax, 1024
+	jne	L2
+	mov	DWORD PTR [esp+12], OFFSET FLAT:LC0
+	mov	DWORD PTR [esp+8], 1024
+	mov	DWORD PTR [esp+4], 100000
+	mov	DWORD PTR [esp], OFFSET FLAT:LC1
+	call	_printf
+	lea	eax, [ebp-48]
+	mov	DWORD PTR [esp], eax
+	call	_ftime
+	mov	ebx, 100000
+	.p2align 2,,3
+L3:
+	mov	DWORD PTR [esp+20], 16
+	lea	eax, [ebp-64]
+	mov	DWORD PTR [esp+16], eax
+	mov	DWORD PTR [esp+12], 0
+	mov	DWORD PTR [esp+8], 1024
+	mov	DWORD PTR [esp+4], esi
+	mov	DWORD PTR [esp], edi
+	call	_sendto@24
+	sub	esp, 24
+	dec	ebx
+	jne	L3
+	lea	eax, [ebp-36]
+	mov	DWORD PTR [esp], eax
+	call	_ftime
+	fld	QWORD PTR LC2
+	fld	st(0)
+	fimul	WORD PTR [ebp-32]
+	fiadd	DWORD PTR [ebp-36]
+	fxch	st(1)
+	fimul	WORD PTR [ebp-44]
+	fiadd	DWORD PTR [ebp-48]
+	fsubp	st(1), st
+	fdivr	DWORD PTR LC3
+	fdiv	DWORD PTR LC4
+	fstp	QWORD PTR [esp+4]
+	mov	DWORD PTR [esp], OFFSET FLAT:LC5
+	call	_printf
+	mov	DWORD PTR [esp], edi
+	call	_closesocket@4
+	push	eax
+	call	_WSACleanup@0
+	lea	esp, [ebp-16]
+	pop	ecx
+	.cfi_def_cfa 1, 0
+	.cfi_restore 1
+	pop	ebx
+	.cfi_restore 3
+	pop	esi
+	.cfi_restore 6
+	pop	edi
+	.cfi_restore 7
+	pop	ebp
+	.cfi_restore 5
+	lea	esp, [ecx-4]
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+LFE21:
+	.section .rdata,"dr"
+	.align 8
+LC2:
+	.long	-755914244
+	.long	1062232653
+	.align 4
+LC3:
+	.long	1313034240
+	.align 4
+LC4:
+	.long	1232348160
+	.def	_WSAStartup@8;	.scl	2;	.type	32;	.endef
+	.def	_socket@12;	.scl	2;	.type	32;	.endef
+	.def	_htons@4;	.scl	2;	.type	32;	.endef
+	.def	_inet_addr@4;	.scl	2;	.type	32;	.endef
+	.def	_printf;	.scl	2;	.type	32;	.endef
+	.def	_ftime;	.scl	2;	.type	32;	.endef
+	.def	_sendto@24;	.scl	2;	.type	32;	.endef
+	.def	_closesocket@4;	.scl	2;	.type	32;	.endef
+	.def	_WSACleanup@0;	.scl	2;	.type	32;	.endef

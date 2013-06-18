@@ -1,0 +1,247 @@
+
+.PP
+.TH "LDPCFecScheme" 3 "6 Sep 2006" "ldpc" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LDPCFecScheme \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <ldpc_scheme.h>\fP
+.PP
+Inherits \fBLDPCFecSession\fP.
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLDPCFecScheme\fP ()"
+.br
+.ti -1c
+.RI "\fB~LDPCFecScheme\fP ()"
+.br
+.ti -1c
+.RI "\fBldpc_error_status\fP \fBDetermineSymbolSize\fP (INT64 objectSize, int pktSize, int *symbolSize, int *nbSourceSymbols)"
+.br
+.ti -1c
+.RI "\fBldpc_error_status\fP \fBInitScheme\fP (int symbolSize, int pktSize)"
+.br
+.ti -1c
+.RI "\fBldpc_error_status\fP \fBBuildPkt\fP (int pktIdx, void **pktBuffer, void *symbol_canvas[], int *ESIofFirstSymbol)"
+.br
+.ti -1c
+.RI "\fBldpc_error_status\fP \fBDecomposePkt\fP (void *pktBuffer, int ESIofFirstSymbol, void **GeneratedSymbols[], int *ESIofSymbols[])"
+.br
+.ti -1c
+.RI "\fBldpc_error_status\fP \fBDecodingStepWithPkt\fP (void *symbol_canvas[], void *pktBuffer, int ESIofFirstSymbol, bool store_symbol)"
+.br
+.ti -1c
+.RI "\fBldpc_error_status\fP \fBDecodingStepWithPkt\fP (void *symbol_canvas[], void *pktBuffer, int ESIofFirstSymbol)"
+.br
+.ti -1c
+.RI "int \fBgetNbSymbolsPerPkt\fP (void)"
+.br
+.ti -1c
+.RI "int \fBgetNbSourcePkts\fP (void)"
+.br
+.ti -1c
+.RI "int \fBgetNbParityPkts\fP (void)"
+.br
+.ti -1c
+.RI "int \fBgetNbSourceSymbols\fP (void)"
+.br
+.ti -1c
+.RI "int \fBgetNbParitySymbols\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that implements parts of the LDPC-Staircase/Triangle FEC Scheme, as defined in draft-ietf-rmt-bb-fec-ldpc-01.txt (or later version). It defines the notion of packet, i.e. the grouping of several symbols in the same transmission unit. Depending on the initialization, the LDPCFECScheme class can either define internally the optimal number of symbols per packet, or take it as a parameter. Using this class makes the symbol(s) <=> packet mapping almost transparent to the user. In that case, packet creation (SENDER) and packet processing (RECEIVER) are completely managed by this class (e.g. there is no need to call the LDPCFECSession::DecodingStepWithSymbol() method any more).
+.PP
+When \fBLDPCFecSession\fP and LDPCFecScheme are both used, the \fBLDPCFecSession\fP MUST be initialized first (with \fBInitSession()\fP), THEN the LDPCFecScheme (with \fBInitScheme()\fP). 
+.PP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "LDPCFecScheme::LDPCFecScheme ()"
+.PP
+LDPCFecScheme Constructor and Destructor.
+.SS "LDPCFecScheme::~\fBLDPCFecScheme\fP ()"
+.PP
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBldpc_error_status\fP LDPCFecScheme::DetermineSymbolSize (INT64 objectSize, int pktSize, int * symbolSize, int * nbSourceSymbols)"
+.PP
+Determine the optimal symbol size when the object size and packet size are both known.
+.PP
+This function defines the optimal symbol size in order to maximize the erasure recovery efficiency. The actual number of symbols per packet can then be retrieved by means of the \fBgetNbSymbolsPerPkt()\fP function. This value must be an integer, i.e. that the packet size must be a multiple of the resulting symbol size (which also depends on the object size). It usually means that the packet size must be a multiple of a certain power of 2. If not possible, an error is returned.
+.PP
+When the object size is not multiple of the symbol size, it is left to the application to handle the possible padding of the last source symbol.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjectSize\fP (IN) the object size (bytes). 
+.br
+\fIpktSize\fP (IN) the packet size (bytes). Depending on the number of symbols per packet, the packet size must sometimes be a multiple of 4 or 8. 
+.br
+\fIsymbolSize\fP (OUT) opimal symbol size determined by this function. 
+.br
+\fInbSourceSymbols\fP (OUT) corresponding number of source symbols. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Completion status (LDPC_OK or LDPC_ERROR).
+.RE
+.PP
+
+.SS "\fBldpc_error_status\fP LDPCFecScheme::InitScheme (int symbolSize, int pktSize)"
+.PP
+Initialize the LDPC scheme. Note that the packet size must be a multiple of the symbol size. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsymbolSize\fP (IN) the symbol size, probably calculated by the \fBDetermineSymbolSize()\fP function above. 
+.br
+\fIpktSize\fP (IN) the packet size (bytes). 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Completion status (LDPC_OK or LDPC_ERROR).
+.RE
+.PP
+
+.SS "\fBldpc_error_status\fP LDPCFecScheme::BuildPkt (int pktIdx, void ** pktBuffer, void * symbol_canvas[], int * ESIofFirstSymbol)"
+.PP
+Build the packet of the index from an appropriate number of symbols. Used by a sender. There are always \fBgetNbSymbolsPerPkt()\fP symbols per packet, even when the number of source or repair symbols are not multiple of the number of symbols per packet. Note that only homogeneous packets are created, i.e. packets consisting either of source symbols (AKA source packets), or or of repair symbols (AKA repair packets).
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpktIdx\fP (IN) Index of the packet to build, in [0; getNbPkts() - 1] range. 
+.br
+\fIpktBuffer\fP Data buffer where the packet should be written. 
+.br
+\fIESIofFirstSymbol\fP (OUT) ESI of the first symbol chosen to be included in this packet. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Completion status (LDPC_OK or LDPC_ERROR).
+.RE
+.PP
+
+.SS "\fBldpc_error_status\fP LDPCFecScheme::DecomposePkt (void * pktBuffer, int ESIofFirstSymbol, void ** GeneratedSymbols[], int * ESIofSymbols[])"
+.PP
+Split a received packet into the set of its constituting symbols. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpktBuffer\fP (IN) Data buffer containing the packet received. 
+.br
+\fIESIofFirstSymbol\fP (IN) ESI of the first symbol of the packet. 
+.br
+\fIGeneratedSymbols[]\fP (OUT) table containing pointers to all the symbols of the packet, including the first one. There are always \fBgetNbSymbolsPerPkt()\fP entries. This table is allocated by the function and must be free'ed by the caller. 
+.br
+\fIESIofSymbols\fP (OUT) table containing the ESI of all the symbols of the packet, including the first one. There are always \fBgetNbSymbolsPerPkt()\fP entries. This table is allocated by the function and must be free'ed by the caller. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Completion status (LDPC_OK or LDPC_ERROR).
+.RE
+.PP
+
+.SS "\fBldpc_error_status\fP LDPCFecScheme::DecodingStepWithPkt (void * symbol_canvas[], void * pktBuffer, int ESIofFirstSymbol, bool store_symbol)"
+.PP
+Perform a new decoding step thanks to the newly received packet. This is the same as \fBLDPCFecSession::DecodingStepWithSymbol()\fP but with a packet as input rather than a symbol. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsymbol_canvas\fP (IN-OUT) Global array of received or rebuilt source symbols (parity symbols need not be stored here). This is a table of k pointers to buffers. This array must be cleared (memset(0)) upon the first call to this function. It will be automatically updated, with pointers to symbols received or decoded, by this function. 
+.br
+\fIpktBuffer\fP (IN) Pointer to the buffer containing the new packet. 
+.br
+\fIESIofFirstSymbol\fP (IN) ESI of the first symbol of the packet. 
+.br
+\fIstore_symbol\fP (IN) true if the function needs to allocate memory, copy the symbol content in it, and call any required callback. This is typically done when this function is called recursively, for newly decoded symbols, or under special circunstances (e.g. perftool). 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Completion status (LDPC_OK or LDPC_ERROR).
+.RE
+.PP
+
+.SS "\fBldpc_error_status\fP LDPCFecScheme::DecodingStepWithPkt (void * symbol_canvas[], void * pktBuffer, int ESIofFirstSymbol)"
+.PP
+Perform a new decoding step thanks to the newly received packet. Same as the other DecodingStepWithSymbol method, without the store_symbol argument (prefered solution). 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsymbol_canvas\fP (IN-OUT) Global array of received or rebuilt source symbols (parity symbols need not be stored here). This is a table of k pointers to buffers. This array must be cleared (memset(0)) upon the first call to this function. It will be automatically updated, with pointers to symbols received or decoded, by this function. 
+.br
+\fIpktBuffer\fP (IN) Pointer to the buffer containing the new packet. 
+.br
+\fIESIofFirstSymbol\fP (IN) ESI of the first symbol of the packet.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Completion status (LDPC_OK or LDPC_ERROR).
+.RE
+.PP
+
+.SS "int LDPCFecScheme::getNbSymbolsPerPkt (void)\fC [inline]\fP"
+.PP
+Return the number of symbols that are grouped in the same packet (AKA symbol group). There are always this number of symbols per packet, even when the number of source or repair symbols is not multiple of the number of symbols per packet. 
+.PP
+\fBReturns:\fP
+.RS 4
+Number of symbols grouped in any packet.
+.RE
+.PP
+
+.SS "int LDPCFecScheme::getNbSourcePkts (void)\fC [inline]\fP"
+.PP
+Return the number of source packets (i.e. consisting only of source symbols). It might differ from the number of source symbols since several symbols can be grouped in the same packet. 
+.PP
+\fBReturns:\fP
+.RS 4
+Number of source packets.
+.RE
+.PP
+
+.SS "int LDPCFecScheme::getNbParityPkts (void)\fC [inline]\fP"
+.PP
+Return the number of parity packets (i.e. consisting only of parity symbols). It might differ from the number of parity symbols since several symbols can be grouped in the same packet. 
+.PP
+\fBReturns:\fP
+.RS 4
+Number of parity packets.
+.RE
+.PP
+
+.SS "int LDPCFecScheme::getNbSourceSymbols (void)\fC [inline]\fP"
+.PP
+Return the number of source symbols It might differ from the number of parity packets since several symbols can be grouped in the same packet. 
+.PP
+\fBReturns:\fP
+.RS 4
+Number of parity packets.
+.RE
+.PP
+
+.SS "int LDPCFecScheme::getNbParitySymbols (void)\fC [inline]\fP"
+.PP
+Return the number of parity symbols It might differ from the number of parity packets since several symbols can be grouped in the same packet. 
+.PP
+\fBReturns:\fP
+.RS 4
+Number of parity packets.
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ldpc from the source code.

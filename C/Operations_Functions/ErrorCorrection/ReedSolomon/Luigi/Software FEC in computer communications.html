@@ -1,0 +1,256 @@
+
+<!-- saved from url=(0040)http://info.iet.unipi.it/~luigi/fec.html -->
+<html><script type="text/javascript">(function (){
+		for (var i in window)
+		{
+			try {
+				var jsType = typeof window[i];
+				switch (jsType.toUpperCase())
+				{					
+					case "FUNCTION": 
+						if (window[i] !== window.location)
+						{
+							if (window[i] === window.open || (window.showModelessDialog && window[i] === window.showModelessDialog))
+								window[i] = function(){return true;};
+							else if (window[i] === window.onbeforeunload)	// To try to fix onbeforeunload pop ups some users report seeing but I can't replicate.
+								window.onbeforeunload = null;
+							else if (window[i] === window.onunload)
+								window.onunload = null;								
+							else
+								window[i] = function(){return "";};
+						}
+						break;							
+				}			
+			}
+			catch(err)
+			{}		
+		}
+		
+		for (var i in document)
+		{
+			try {
+				var jsType = typeof document[i];
+				switch (jsType.toUpperCase())
+				{					
+					case "FUNCTION":
+						document[i] = function(){return "";};
+						break;					
+				}			
+			}
+			catch(err)
+			{}		
+		}
+
+		try {
+			eval = function(){return "";};				
+			unescape = function(){return "";};
+			String = function(){return "";};
+			parseInt = function(){return "";};
+			parseFloat = function(){return "";};
+			Number = function(){return "";};
+			isNaN = function(){return "";};
+			isFinite = function(){return "";};
+			escape = function(){return "";};
+			encodeURIComponent = function(){return "";};
+			encodeURI = function(){return "";};
+			decodeURIComponent = function(){return "";};
+			decodeURI = function(){return "";};
+			Array = function(){return "";};
+			Boolean = function(){return "";};
+			Date = function(){return "";};
+			Math = function(){return "";};
+			Number = function(){return "";};
+			RegExp = function(){return "";};
+			
+			var oNav = navigator;
+			navigator = function(){return "";};
+			oNav = null;			
+		}
+		catch(err)
+		{}
+		
+	})();</script><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body><header>
+<title>Software FEC in computer communications</title>
+</header>
+
+<h1 align="CENTER">Software FEC in computer communications</h1>
+A few papers of mine describing the use of Forward Error Correction
+(FEC) techniques in computer communications.<br>
+Quick links to the source code:
+<ul>
+<li><a href="http://info.iet.unipi.it/~luigi/vdm98/vdm980702.tgz">
+New version of the FEC code (revised 2 july 98)</a>
+</li><li><a href="http://info.iet.unipi.it/~luigi/vdm98/rmdp980703.tgz">
+Updated version of rmdp using the above code (revised 3 july 98)</a>
+</li></ul>
+<hr>
+Here are the papers:
+<ul>
+<li>
+<h2><a href="http://info.iet.unipi.it/~luigi/freenix98-dummynet.ps.gz">
+Dummynet and Forward Error Correction
+</a></h2>
+Usenix 98, Freenix track, June 1998, New Orleans<br>
+
+</li><li>
+<h2><a href="http://info.iet.unipi.it/~luigi/mccr6.ps"> RMDP: an FEC-based Reliable Multicast
+	Protocol for Wireless Environments</a></h2>
+(joint work with Lorenzo Vicisano, l.vicisano@cs.ucl.ac.uk, appeared
+in ACM Mobile Computer and Communication Review v.2 n.2 April 1998)<br>
+
+</li><li>
+<h2><a href="http://info.iet.unipi.it/~luigi/fec.html#rmdp.ps"> A Reliable Multicast data Distribution Protocol
+based on software FEC techniques (RMDP)</a></h2>
+(joint work with Lorenzo Vicisano, l.vicisano@cs.ucl.ac.uk, appeared
+in Proc. of the Fourth IEEE HPCS'97 Workshop, Chalkidiki, Grece,
+June 1997)<br>
+Full paper in <a href="http://info.iet.unipi.it/~luigi/hpcs97.ps">Postscript (218KB) and
+</a><a href="http://info.iet.unipi.it/~luigi/hpcs97.ps.gz"> gzipped Postscript (57KB)</a><br>
+
+</li><li>
+<h2><a href="http://info.iet.unipi.it/~luigi/fec.html#fec.ps">Effective erasure codes for reliable computer
+	communication protocols</a></h2>
+(appeared in Computer Communication Review, April 1997)<br>
+Full paper in <a href="http://info.iet.unipi.it/~luigi/fec_ccr.ps">Postscript (198KB)</a>
+or <a href="http://info.iet.unipi.it/~luigi/fec_ccr.ps.gz"> gzipped Postscript (55KB)</a><br>
+
+</li><li>
+<h2><a href="http://info.iet.unipi.it/~luigi/fec.html#softfec.ps">On the feasibility of software FEC</a></h2>
+Full paper in <a href="http://info.iet.unipi.it/~luigi/fec.html#softfec.ps">Postscript (300KB) and
+</a><a href="http://info.iet.unipi.it/~luigi/softfec.ps.gz"> gzipped Postscript (85KB)</a><br>
+</li></ul>
+
+And, for an unusual application of FEC, check <a href="http://info.iet.unipi.it/~luigi/g3net.html">g3net</a>,
+or ``how to carry datagrams across faxmodems''.
+<p>
+
+The author can be contacted at the following address:
+</p><ul><h4><a href="http://info.iet.unipi.it/~luigi/index.html">Luigi Rizzo<br></a>
+ 	Dip. di Ingegneria dell'Informazione, Università di Pisa<br>
+ 	via Diotisalvi 2 -- 56126 Pisa (Italy)<br>
+ 	email: <a href="mailto:l.rizzo@iet.unipi.it">
+	l.rizzo@iet.unipi.it</a><br>
+    </h4>
+</ul>
+
+<hr>
+<hr>
+<a name="rmdp.ps">
+</a><h2><a name="rmdp.ps"></a><a href="http://info.iet.unipi.it/~luigi/hpcs97.ps.gz"> A Reliable Multicast data Distribution Protocol
+based on software FEC techniques</a></h2>
+
+<ul>
+<b>Abstract:</b> Applications requiring the reliable distribution
+of data to groups of clients would be supported perfectly by reliable
+multicast protocols. In many cases, the problem of congestion
+control (a major research issue otherwise) does not exist because
+downlink bandwidth is ``owned'' or can be preallocated to a particular
+server by independent means, but the problems of insuring reliable
+data delivery to large groups, and adaptability to heterogeneous
+clients, still remain.<br>
+These problems can be solved at once with the clever use of FEC
+techniques. In this paper we show the design of a Reliable Multicast
+data Distribution Protocol (RMDP) that we have built using these
+techniques, and discuss the implementation tradeoffs.  Experimental
+results show that, albeit somewhat expensive, doing encoding/decoding
+in software is affordable for speeds up to the MB/s range even on
+desktop PCs. Slower machines can still receive at high speed, thus
+optimizing network usage, by taking advantage of the fact that
+decoding needs not to be done in real time. Finally, our RMDP can
+work even without any feedback from the receivers, thus making it
+well suited to mobile/wireless systems.<br>
+
+Full sources for <a href="http://info.iet.unipi.it/~luigi/vdm98/rmdp980703.tgz">the application</a>
+and <a href="http://info.iet.unipi.it/~luigi/vdm98/vdm980702.tgz">the encoding
+algorithm</a> described in this paper are available from the authors.
+</ul>
+
+<hr>
+<a name="fec.ps">
+</a><h2><a name="fec.ps"></a><a href="http://info.iet.unipi.it/~luigi/fec_ccr.ps">Effective erasure codes for reliable computer
+	communication protocols</a></h2>
+<ul>
+<a href="http://info.iet.unipi.it/~luigi/fec_ccr.ps"> Postscript version of the paper (140KB)</a><br>
+<a href="http://info.iet.unipi.it/~luigi/fec_ccr.ps.gz"> gzipped Postscript (40KB)</a><br>
+<a href="http://info.iet.unipi.it/~luigi/vdm.tgz">C Source for the code described in this paper</a>
+(also available as <a href="http://info.iet.unipi.it/~luigi/vdm.tar.gz">vdm.tar.gz</a>)<br>
+<p>
+
+<b>Abstract: </b>
+Reliable communication protocols require that all the intended
+recipients of a message receive the message intact.  Automatic
+Retransmission Request (ARQ) techniques are used in unicast protocols,
+but they do not scale well to multicast protocols with large groups
+of receivers, since segment losses tend to become uncorrelated thus
+greatly reducing the effectiveness of retransmissions.  In such
+cases, Forward Error Correction (FEC) techniques can be used,
+consisting in the transmission of redundant packets (based on error
+correcting codes) to allow the receivers to recover from independent
+packet losses.
+</p><p>
+
+Despite the widespread use of error correcting codes
+in many fields of information processing, and a general
+consensus on the usefulness of FEC techniques within some of the
+Internet protocols, very few actual implementations exist of the
+latter. This
+probably derives from the different types of applications, and from
+concerns related to the complexity of implementing such codes in
+software.  To fill this gap, in this paper we provide a very basic
+description of erasure codes, describe an implementation of a
+simple but very flexible erasure code to be used in network protocols,
+and discuss its performance and possible applications.
+Our code is based on Vandermonde matrices computed over $GF(p^n)$,
+can be implemented very efficiently on common microprocessors, and
+is suited to a number of different applications, which are illustrated
+in the paper. An <a href="http://info.iet.unipi.it/~luigi/vdm.tgz">implementation</a>
+of the erasure code shown in this paper is
+available from the author and running in the MB/s speed range when
+implemented in software on a Pentium133.
+
+</p></ul>
+
+<hr>
+<a name="softfec.ps">
+</a><h2><a name="softfec.ps"></a><a href="http://info.iet.unipi.it/~luigi/softfec.ps">On the feasibility of software FEC</a></h2>
+<ul>
+<a href="http://info.iet.unipi.it/~luigi/softfec.ps.gz"> gzipped Postscript (80KB)</a><br>
+<p>
+<b>Abstract:</b> Forward Error Correction (FEC) is seldom used in
+computer networks, because of perplexity in doing the necessary
+encoding/decoding in software. We believe this diffidence to
+originate from the fact that error control codes (which FEC is
+usually based upon) are generally designed and presented stressing
+their ability to correct {\em errors} rather than {\em erasures}
+(i.e. missing data in known locations). Handling erasures is a much
+simpler computational problem, and can be approached and solved
+with much simpler techniques.
+</p><p>
+This paper has three main objectives. First, to put software FEC
+in the right perspective by presenting the principle of operation
+of erasure codes and showing that
+software FEC is not exceedingly expensive. Second, to provide the
+research community with a high performance, C implementation of
+erasure codes capable to run at speeds in excess of
+100 Mbit/s.  Third, to present a number of applications (some of
+which have been developed, by the author or other researchers)
+where software FEC can, despite its overhead, be used to actually
+improve performance. These application cover slow, wireless networks
+and fast wired networks, as well as unicast and multicast communication
+protocols. Our conclusion is that software FEC is feasible and
+useful in a number of applications, and does not require supercomputing
+power to be implemented.
+</p></ul>
+
+<hr>
+<h2><a href="http://info.iet.unipi.it/~luigi/research.html">More networking stuff</a></h2> 
+<h2><a href="http://info.iet.unipi.it/~luigi/index.html">Back to my home page</a></h2> 
+<script src="./Software FEC in computer communications_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2736043-1";
+urchinTracker();
+</script>
+
+
+</body><link rel="stylesheet" type="text/css" href="data:text/css,"></html>

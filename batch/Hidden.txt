@@ -1,0 +1,901 @@
+c:\$Recycle.Bin
+c:\boot
+c:\bootmgr
+c:\Documents and Settings
+c:\hiberfil.sys
+c:\HP
+c:\MSOCache
+c:\pagefile.sys
+c:\ProgramData
+c:\Recovery
+c:\System Volume Information
+c:\SYSTEM.SAV
+c:\$Recycle.Bin\S-1-5-21-2458243195-2367855667-1857459644-1000
+c:\$Recycle.Bin\S-1-5-21-2458243195-2367855667-1857459644-500
+c:\$Recycle.Bin\S-1-5-21-2907693122-3731073314-3368902185-500
+c:\$Recycle.Bin\S-1-5-21-2458243195-2367855667-1857459644-1000\$RP5PM8I.ini
+c:\$Recycle.Bin\S-1-5-21-2458243195-2367855667-1857459644-1000\desktop.ini
+c:\$Recycle.Bin\S-1-5-21-2458243195-2367855667-1857459644-1000\$R41B1VR\HP QuickWeb\desktop.ini
+c:\$Recycle.Bin\S-1-5-21-2458243195-2367855667-1857459644-1000\$R41B1VR\Recovery Manager\desktop.ini
+c:\boot\BCD.LOG
+c:\boot\BCD.LOG1
+c:\boot\BCD.LOG2
+c:\HP\Bin\hpbi.log
+c:\My Programing\a5_Dragon's_Plight\bin\Debug\images\.svn
+c:\My Programing\Old Backup\Iron Cowboy\2011_apr_6_a5_intro_seq_music\2011_apr_6_Intro_Seq_music\bin\Debug\images\.svn
+c:\My Programing\Old Backup\Iron Cowboy\2011_apr_7_main_menu\bin\Debug\images\.svn
+c:\My Programing\Old Backup\Iron Cowboy\8 Jun 09 Intro From Zach\FRom Zach (Intro)\images\.svn
+c:\My Programing\Old Backup\Iron Cowboy\8 Jun 09 Intro From Zach\FRom Zach (Intro)\sounds\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\inline\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\internal\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\opengl\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\opengl\GLext\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\platform\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\inline\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\internal\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\opengl\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\opengl\GLext\.svn
+c:\My Programing\Old Backup\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\platform\.svn
+c:\My Programing\Old Backup\the_green_grappler\extsrc\TmxParser\base64\.svn
+c:\My Programing\Old Backup\the_green_grappler\extsrc\TmxParser\tinyxml\.svn
+c:\My Programing\Old Backup\the_green_grappler\extsrc\TmxParser\zlib\.svn
+c:\My Programing\Older_Allegro\Iron Cowboy\2011_apr_6_a5_intro_seq_music\2011_apr_6_Intro_Seq_music\bin\Debug\images\.svn
+c:\My Programing\Older_Allegro\Iron Cowboy\2011_apr_7_main_menu\bin\Debug\images\.svn
+c:\My Programing\Older_Allegro\Iron Cowboy\8 Jun 09 Intro From Zach\FRom Zach (Intro)\images\.svn
+c:\My Programing\Older_Allegro\Iron Cowboy\8 Jun 09 Intro From Zach\FRom Zach (Intro)\sounds\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\inline\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\internal\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\opengl\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\opengl\GLext\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\allegro5\platform\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\inline\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\internal\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\opengl\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\opengl\GLext\.svn
+c:\My Programing\Older_Allegro\Misc\Missing4.9.12_22_jun_09_Bitmap\bitmap\include\allegro5\platform\.svn
+c:\My Programing\Older_Allegro\the_green_grappler\extsrc\TmxParser\base64\.svn
+c:\My Programing\Older_Allegro\the_green_grappler\extsrc\TmxParser\tinyxml\.svn
+c:\My Programing\Older_Allegro\the_green_grappler\extsrc\TmxParser\zlib\.svn
+c:\Program Files\desktop.ini
+c:\Program Files\Uninstall Information
+c:\Program Files\Common Files\Microsoft Shared\Stationery\Desktop.ini
+c:\Program Files\IDT\OEMSkin\Thumbs.db
+c:\Program Files\Microsoft Games\Chess\desktop.ini
+c:\Program Files\Microsoft Games\FreeCell\desktop.ini
+c:\Program Files\Microsoft Games\Hearts\desktop.ini
+c:\Program Files\Microsoft Games\Mahjong\desktop.ini
+c:\Program Files\Microsoft Games\Purble Place\desktop.ini
+c:\Program Files\Microsoft Games\Solitaire\desktop.ini
+c:\Program Files\Microsoft Games\SpiderSolitaire\desktop.ini
+c:\Program Files\Windows Mail\WinMail.exe
+c:\Program Files (x86)\desktop.ini
+c:\Program Files (x86)\InstallShield Installation Information
+c:\Program Files (x86)\Uninstall Information
+c:\Program Files (x86)\Common Files\microsoft shared\Stationery\Desktop.ini
+c:\Program Files (x86)\Common Files\Symantec Shared\COH\COH64LU.reg
+c:\Program Files (x86)\Common Files\Symantec Shared\COH\COHDLU.reg
+c:\Program Files (x86)\Common Files\Windows Live\.cache
+c:\Program Files (x86)\Hewlett-Packard\HP Setup\Easy Internet Signup\Offers\en\content\skypevas00009mcd22\Thumbs.db
+c:\Program Files (x86)\Hewlett-Packard\HP Setup\Easy Internet Signup\Offers\en_ca\content\skypevas00009mcd22\Thumbs.db
+c:\Program Files (x86)\Hewlett-Packard\HP Setup\Easy Internet Signup\Offers\en_us\content\skypevas00009mcd22\Thumbs.db
+c:\Program Files (x86)\Hewlett-Packard\HP Setup\Easy Internet Signup\Offers\fi\content\skypevas00023mcd22\Thumbs.db
+c:\Program Files (x86)\Online Services\desktop.ini
+c:\Program Files (x86)\Skype\desktop.ini
+c:\Program Files (x86)\Steam\old
+c:\Program Files (x86)\VideoLAN\VLC\uninstall.log
+c:\Program Files (x86)\Windows Mail\WinMail.exe
+c:\ProgramData\Application Data
+c:\ProgramData\Desktop
+c:\ProgramData\Documents
+c:\ProgramData\Favorites
+c:\ProgramData\Start Menu
+c:\ProgramData\Templates
+c:\ProgramData\CyberLink\BDNAV
+c:\ProgramData\CyberLink\EvoParser
+c:\ProgramData\CyberLink\BDNAV\BRF.dat
+c:\ProgramData\CyberLink\EvoParser\MediaSmart\4.2_DVD
+c:\ProgramData\EPSON\PRINTER
+c:\ProgramData\EPSON\EPSON Artisan 710 Series\Language
+c:\ProgramData\EPSON\PRINTER\EPAUDF01.AUD
+c:\ProgramData\Hewlett-Packard\Recovery\hpdrcu.prc
+c:\ProgramData\Microsoft\WwanSvc
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help_CValidator.H1D
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help_MKWD_AssetId.H1W
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help_MKWD_BestBet.H1W
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help_MTOC_help.H1H
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help_MValidator.H1D
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help_MValidator.Lck
+c:\ProgramData\Microsoft\Assistance\Client\1.0\en-US\Help{9DAA54E8-CD95-4107-8E7F-BA3F24732D95}.H1Q
+c:\ProgramData\Microsoft\DRM\Server
+c:\ProgramData\Microsoft\eHome\thmb\TVThumb.db
+c:\ProgramData\Microsoft\PlayReady\Cache
+c:\ProgramData\Microsoft\PlayReady\Cache\indiv01.bla
+c:\ProgramData\Microsoft\PlayReady\Cache\indiv01.key
+c:\ProgramData\Microsoft\PlayReady\Cache\indiv01.tmp
+c:\ProgramData\Microsoft\PlayReady\Cache\indiv01_64.key
+c:\ProgramData\Microsoft\PlayReady\Cache\S-1-5-21-2458243195-2367855667-1857459644-1000\MSPRindiv01.key
+c:\ProgramData\Microsoft\Windows\DRM
+c:\ProgramData\Microsoft\Windows\DRM\blackbox.bin
+c:\ProgramData\Microsoft\Windows\DRM\Cache
+c:\ProgramData\Microsoft\Windows\DRM\drmstore.hds
+c:\ProgramData\Microsoft\Windows\DRM\v3ks.bla
+c:\ProgramData\Microsoft\Windows\DRM\v3ks.sec
+c:\ProgramData\Microsoft\Windows\Ringtones\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Accessibility\Desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\System Tools\Desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Games\Desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\LightScribe Direct Disc Labeling\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Maintenance\Desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Online Services\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Recovery Manager\desktop.ini
+c:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\desktop.ini
+c:\ProgramData\Microsoft\WwanSvc\Profiles
+c:\ProgramData\Microsoft Help\Hx.hxn
+c:\ProgramData\Microsoft Help\Hx_1033_MKWD_K.HxW
+c:\ProgramData\Microsoft Help\Hx_1033_MKWD_NamedURL.HxW
+c:\ProgramData\Microsoft Help\Hx_1033_MTOC_Hx.HxH
+c:\ProgramData\Microsoft Help\Hx_1033_MValidator.HxD
+c:\ProgramData\Microsoft Help\Hx_1033_MValidator.Lck
+c:\ProgramData\Microsoft Help\MS.EXCEL.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.EXCEL.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.EXCEL.DEV.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.EXCEL.DEV.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.GRAPH.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.GRAPH.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.GROOVE.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.INFOPATH.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.INFOPATHEDITOR.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSACCESS.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSACCESS.DEV.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSOUC.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSPUB.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSPUB.DEV.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSTORE.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.MSTORE.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.OIS.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.OIS.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.ONENOTE.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.ONENOTE.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.OUTLOOK.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.OUTLOOK.DEV.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.POWERPNT.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.POWERPNT.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.POWERPNT.DEV.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.POWERPNT.DEV.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.RIBBON.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.SETLANG.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.SETLANG.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.WINWORD.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.WINWORD.14.1033.hxn
+c:\ProgramData\Microsoft Help\MS.WINWORD.DEV.12.1033.hxn
+c:\ProgramData\Microsoft Help\MS.WINWORD.DEV.14.1033.hxn
+c:\ProgramData\Microsoft Help\nslist.hxl
+c:\ProgramData\Sonic\sarlicense11.dat
+c:\SwSetup\QuickWeb
+c:\SwSetup\Drivers\Audio\OEMSkin\Thumbs.db
+c:\SwSetup\HPHN\Hulu\icon\Thumbs.db
+c:\SwSetup\HPHN\Hulu\icon\vssver2.scc
+c:\SwSetup\MSDVD\HPMSDVD\hp\tmp\Icon\Thumbs.db
+c:\SwSetup\MSMusic\HPMSTSMusic\hp\tmp\Icon\Thumbs.db
+c:\SwSetup\QuickWeb\QW.SYS
+c:\SwSetup\QuickWeb\HPMBackup\splash.idx
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak\user-002.dat
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak\user-002.dat.date
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak\user-002.dat.md5
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak\user-003.dat
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak\user-003.dat.date
+c:\SwSetup\QuickWeb\QW.SYS\persist.bak\user-003.dat.md5
+c:\SwSetup\RoxCN\hp\Thumbs.db
+c:\Users\All Users
+c:\Users\Default
+c:\Users\Default User
+c:\Users\desktop.ini
+c:\Users\Default\AppData
+c:\Users\Default\Application Data
+c:\Users\Default\Cookies
+c:\Users\Default\Local Settings
+c:\Users\Default\My Documents
+c:\Users\Default\NetHood
+c:\Users\Default\NTUSER.DAT
+c:\Users\Default\NTUSER.DAT.LOG
+c:\Users\Default\NTUSER.DAT.LOG1
+c:\Users\Default\NTUSER.DAT.LOG2
+c:\Users\Default\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+c:\Users\Default\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+c:\Users\Default\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+c:\Users\Default\PrintHood
+c:\Users\Default\Recent
+c:\Users\Default\SendTo
+c:\Users\Default\Start Menu
+c:\Users\Default\Templates
+c:\Users\Default\AppData\Local\Application Data
+c:\Users\Default\AppData\Local\History
+c:\Users\Default\AppData\Local\Temporary Internet Files
+c:\Users\Default\AppData\Local\Microsoft\Windows\History
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files
+c:\Users\Default\AppData\Local\Microsoft\Windows\History\History.IE5
+c:\Users\Default\AppData\Local\Microsoft\Windows\History\History.IE5\desktop.ini
+c:\Users\Default\AppData\Local\Microsoft\Windows\History\History.IE5\index.dat
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\desktop.ini
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\49R3RN19
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\desktop.ini
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\index.dat
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\P51GILSU
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\T6GZ6ZE5
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\X4239KZY
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\49R3RN19\desktop.ini
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\P51GILSU\desktop.ini
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\T6GZ6ZE5\desktop.ini
+c:\Users\Default\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\X4239KZY\desktop.ini
+c:\Users\Default\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\desktop.ini
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\Cookies
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\Cookies\index.dat
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\SendTo\Desktop.ini
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Desktop.ini
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Accessibility\Desktop.ini
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\System Tools\Desktop.ini
+c:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Maintenance\Desktop.ini
+c:\Users\Default\Documents\My Music
+c:\Users\Default\Documents\My Pictures
+c:\Users\Default\Documents\My Videos
+c:\Users\dOOBER\AppData
+c:\Users\dOOBER\Application Data
+c:\Users\dOOBER\Cookies
+c:\Users\dOOBER\Local Settings
+c:\Users\dOOBER\My Documents
+c:\Users\dOOBER\NetHood
+c:\Users\dOOBER\NTUSER.DAT
+c:\Users\dOOBER\ntuser.dat.LOG1
+c:\Users\dOOBER\ntuser.dat.LOG2
+c:\Users\dOOBER\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+c:\Users\dOOBER\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+c:\Users\dOOBER\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+c:\Users\dOOBER\ntuser.ini
+c:\Users\dOOBER\PrintHood
+c:\Users\dOOBER\Recent
+c:\Users\dOOBER\SendTo
+c:\Users\dOOBER\Start Menu
+c:\Users\dOOBER\Templates
+c:\Users\dOOBER\AppData\Local\Application Data
+c:\Users\dOOBER\AppData\Local\History
+c:\Users\dOOBER\AppData\Local\IconCache.db
+c:\Users\dOOBER\AppData\Local\Temporary Internet Files
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache
+c:\Users\dOOBER\AppData\Local\Microsoft\Assistance\Client\1.0\en-US\Help_MValidator.Lck
+c:\Users\dOOBER\AppData\Local\Microsoft\Device Metadata\dmrccache\downloads
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds\{5588ACFD-6436-411B-A5CE-666AE6A92D3D}~
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds\{5588ACFD-6436-411B-A5CE-666AE6A92D3D}~\WebSlices~
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\0ENB1DV3
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\3U8U83X5
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\FX6N8Z5G
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\KI17N74Q
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\0ENB1DV3\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\3U8U83X5\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\FX6N8Z5G\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Feeds Cache\KI17N74Q\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Media Player\Art Cache
+c:\Users\dOOBER\AppData\Local\Microsoft\Media Player\Art Cache\LocalMLS\{3900A4BE-28B8-42ED-BED9-7884170373AE}.jpg
+c:\Users\dOOBER\AppData\Local\Microsoft\Media Player\Art Cache\LocalMLS\{50E8D054-D497-48FB-ACE0-7461ADDC5AA1}.jpg
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\UsrClass.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG1
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG2
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\UsrClass.dat{5cf19419-f1ea-11e0-8017-0026c7627fbe}.TM.blf
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\UsrClass.dat{5cf19419-f1ea-11e0-8017-0026c7627fbe}.TMContainer00000000000000000001.regtrans-ms
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\UsrClass.dat{5cf19419-f1ea-11e0-8017-0026c7627fbe}.TMContainer00000000000000000002.regtrans-ms
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Burn\Burn
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Burn\Burn1
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Burn\Burn2
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Burn\Burn\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Burn\Burn1\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Burn\Burn2\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012022020120227
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012022720120305
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012030520120312
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012031220120313
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012031520120316
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012022020120227\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012022720120305\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012030520120312\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012031220120313\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\History.IE5\MSHist012012031520120316\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low\History.IE5
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low\History.IE5\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low\History.IE5\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low\History.IE5\MSHist012011100820111009
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\History\Low\History.IE5\MSHist012011100820111009\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.MSO
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Word
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Virtualized
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\4XBDX588
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\63KT4HG6
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\KB5Z0XXS
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\XVJKGDDN
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\4XBDX588\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\63KT4HG6\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\KB5Z0XXS\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\XVJKGDDN\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\H1TSGSPR
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\index.dat
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\K3XKW8AV
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\MYJ4IS3Z
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\ORQ3KVTK
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\H1TSGSPR\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\K3XKW8AV\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\MYJ4IS3Z\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5\ORQ3KVTK\desktop.ini
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows\Temporary Internet Files\Virtualized\C\Users\dOOBER\AppData\Roaming\Microsoft\Windows\PrivacIE\Low
+c:\Users\dOOBER\AppData\Local\Microsoft\Windows Mail\Stationery\Desktop.ini
+c:\Users\dOOBER\AppData\LocalLow\Microsoft\Internet Explorer\DOMStore
+c:\Users\dOOBER\AppData\LocalLow\Microsoft\Internet Explorer\DOMStore\9NCQQ408
+c:\Users\dOOBER\AppData\LocalLow\Microsoft\Internet Explorer\DOMStore\FDN46Y4A
+c:\Users\dOOBER\AppData\LocalLow\Microsoft\Internet Explorer\DOMStore\HKCCHPLD
+c:\Users\dOOBER\AppData\LocalLow\Microsoft\Internet Explorer\DOMStore\index.dat
+c:\Users\dOOBER\AppData\LocalLow\Microsoft\Internet Explorer\DOMStore\NFBYKA3Z
+c:\Users\dOOBER\AppData\Roaming\CyberLink\MediaCache
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts\7e4dca80246863e3\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts\9d91276b0be3e46b\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\4R7U6UX1
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\HGQX6ZN5
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\NIYSIHZU
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\X3TFJEFZ
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Office\Recent\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Protect\CREDHIST
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Protect\S-1-5-21-2458243195-2367855667-1857459644-1000\0eb4682a-3e8e-465b-b505-04493a170fa9
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Protect\S-1-5-21-2458243195-2367855667-1857459644-1000\5ef0b385-d64c-475d-ae5a-b977b04384e9
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Protect\S-1-5-21-2458243195-2367855667-1857459644-1000\Preferred
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Cookies
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IECompatCache
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IEDownloadHistory
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IETldCache
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Cookies\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Cookies\Low
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Cookies\Low\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IECompatCache\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IECompatCache\Low
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IECompatCache\Low\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IEDownloadHistory\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IETldCache\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IETldCache\Low
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\IETldCache\Low\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Libraries\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\PrivacIE\Low
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\PrivacIE\Low\index.dat
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Recent\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\SendTo\Desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Accessibility\Desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\System Tools\Desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Administrative Tools\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Maintenance\Desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\desktop.ini
+c:\Users\dOOBER\AppData\Roaming\Microsoft\Windows\Themes\slideshow.ini
+c:\Users\dOOBER\Contacts\desktop.ini
+c:\Users\dOOBER\Desktop\desktop.ini
+c:\Users\dOOBER\Documents\desktop.ini
+c:\Users\dOOBER\Documents\My Music
+c:\Users\dOOBER\Documents\My Pictures
+c:\Users\dOOBER\Documents\My Videos
+c:\Users\dOOBER\Documents\xpadder\Thumbs.db
+c:\Users\dOOBER\Downloads\desktop.ini
+c:\Users\dOOBER\Favorites\desktop.ini
+c:\Users\dOOBER\Favorites\Links\desktop.ini
+c:\Users\dOOBER\Favorites\Links for United States\desktop.ini
+c:\Users\dOOBER\Links\desktop.ini
+c:\Users\dOOBER\Music\desktop.ini
+c:\Users\dOOBER\Pictures\desktop.ini
+c:\Users\dOOBER\Saved Games\desktop.ini
+c:\Users\dOOBER\Searches\desktop.ini
+c:\Users\dOOBER\Searches\Everywhere.search-ms
+c:\Users\dOOBER\Searches\Indexed Locations.search-ms
+c:\Users\dOOBER\Videos\desktop.ini
+c:\Users\Public\Desktop
+c:\Users\Public\desktop.ini
+c:\Users\Public\Favorites
+c:\Users\Public\Libraries
+c:\Users\Public\NTUSER.DAT.LOG1
+c:\Users\Public\NTUSER.DAT.LOG2
+c:\Users\Public\NTUSER.DAT{7958c15f-f81b-11e0-979c-080027004c6f}.TM.blf
+c:\Users\Public\NTUSER.DAT{7958c15f-f81b-11e0-979c-080027004c6f}.TMContainer00000000000000000001.regtrans-ms
+c:\Users\Public\NTUSER.DAT{7958c15f-f81b-11e0-979c-080027004c6f}.TMContainer00000000000000000002.regtrans-ms
+c:\Users\Public\NTUSER.DAT{ae902393-f1d6-11e0-ab40-0026c7627fbe}.TM.blf
+c:\Users\Public\NTUSER.DAT{ae902393-f1d6-11e0-ab40-0026c7627fbe}.TMContainer00000000000000000001.regtrans-ms
+c:\Users\Public\NTUSER.DAT{ae902393-f1d6-11e0-ab40-0026c7627fbe}.TMContainer00000000000000000002.regtrans-ms
+c:\Users\Public\Desktop\desktop.ini
+c:\Users\Public\Documents\desktop.ini
+c:\Users\Public\Documents\My Music
+c:\Users\Public\Documents\My Pictures
+c:\Users\Public\Documents\My Videos
+c:\Users\Public\Downloads\desktop.ini
+c:\Users\Public\Libraries\desktop.ini
+c:\Users\Public\Music\desktop.ini
+c:\Users\Public\Music\Sample Music\AlbumArtSmall.jpg
+c:\Users\Public\Music\Sample Music\AlbumArt_{5FA05D35-A682-4AF6-96F7-0773E42D4D16}_Large.jpg
+c:\Users\Public\Music\Sample Music\AlbumArt_{5FA05D35-A682-4AF6-96F7-0773E42D4D16}_Small.jpg
+c:\Users\Public\Music\Sample Music\desktop.ini
+c:\Users\Public\Music\Sample Music\Folder.jpg
+c:\Users\Public\Pictures\desktop.ini
+c:\Users\Public\Pictures\Sample Pictures\desktop.ini
+c:\Users\Public\Recorded TV\desktop.ini
+c:\Users\Public\Recorded TV\TempRec
+c:\Users\Public\Recorded TV\Sample Media\desktop.ini
+c:\Users\Public\Recorded TV\TempRec\ehscanned.dat
+c:\Users\Public\Recorded TV\TempRec\TempSBE
+c:\Users\Public\Videos\desktop.ini
+c:\Users\Public\Videos\Sample Videos\desktop.ini
+c:\Windows\Installer
+c:\Windows\msdownld.tmp
+c:\Windows\RPISREMOVED.FLG
+c:\Windows\WindowsShell.Manifest
+c:\Windows\assembly\Desktop.ini
+c:\Windows\assembly\PublisherPolicy.tme
+c:\Windows\assembly\pubpol51.dat
+c:\Windows\assembly\pubpol53.dat
+c:\Windows\assembly\NativeImages_v2.0.50727_32\index477.dat
+c:\Windows\assembly\NativeImages_v2.0.50727_32\index478.dat
+c:\Windows\assembly\NativeImages_v2.0.50727_64\index513.dat
+c:\Windows\assembly\NativeImages_v2.0.50727_64\index514.dat
+c:\Windows\assembly\NativeImages_v4.0.30319_32\index246.dat
+c:\Windows\assembly\NativeImages_v4.0.30319_32\index247.dat
+c:\Windows\assembly\NativeImages_v4.0.30319_64\index1e1.dat
+c:\Windows\assembly\NativeImages_v4.0.30319_64\index1e2.dat
+c:\Windows\Downloaded Program Files\desktop.ini
+c:\Windows\Fonts\desktop.ini
+c:\Windows\Fonts\fms_metadata.xml
+c:\Windows\Fonts\StaticCache.dat
+c:\Windows\Globalization\MCT
+c:\Windows\Globalization\MCT\MCT-AU\Wallpaper\desktop.ini
+c:\Windows\Globalization\MCT\MCT-CA\Wallpaper\desktop.ini
+c:\Windows\Globalization\MCT\MCT-GB\Link\desktop.ini
+c:\Windows\Globalization\MCT\MCT-GB\Wallpaper\desktop.ini
+c:\Windows\Globalization\MCT\MCT-US\Link\desktop.ini
+c:\Windows\Globalization\MCT\MCT-US\Wallpaper\desktop.ini
+c:\Windows\Globalization\MCT\MCT-ZA\Wallpaper\desktop.ini
+c:\Windows\inf\oem27.inf
+c:\Windows\Installer\$PatchCache$
+c:\Windows\Installer\$PatchCache$\Managed
+c:\Windows\Installer\$PatchCache$\UnManaged
+c:\Windows\Installer\$PatchCache$\Managed\000041091A0090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109440090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109510090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109511090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109610090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109611090400100000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109711090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109810090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109910090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109A10090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109A20000000100000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109A20090400100000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109AB0090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109B10090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109C20090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109E60090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109F10090400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109F100A0C00000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004109F100C0400000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\00004119110000000000000000F01FEC
+c:\Windows\Installer\$PatchCache$\Managed\1007C6B46D7C017319E3B52CF3EC196E
+c:\Windows\Installer\$PatchCache$\Managed\4E56ADF164C7AA9479127A4321D5863F
+c:\Windows\Installer\$PatchCache$\Managed\52BFB8AF84FBB8F488953B8001471509
+c:\Windows\Installer\$PatchCache$\Managed\6A262021B4A79884EA585F5E86D86338
+c:\Windows\Installer\$PatchCache$\Managed\6A7105EE52579EE499ADE21F6F1CB6B1
+c:\Windows\Installer\$PatchCache$\Managed\6F9E66FF7E38E3A3FA41D89E8A906A4A
+c:\Windows\Installer\$PatchCache$\Managed\AC0FD02F929562C45A10DF1BF9FDA005
+c:\Windows\Installer\$PatchCache$\Managed\C173E5AD3336A8D3394AF65D2BB0CCE6
+c:\Windows\Installer\$PatchCache$\Managed\c1c4f01781cc94c4c8fb1542c0981a2a
+c:\Windows\Installer\$PatchCache$\Managed\CFD2C1F142D260E3CB8B271543DA9F98
+c:\Windows\Installer\$PatchCache$\Managed\D20352A90C039D93DBF6126ECE614057
+c:\Windows\Installer\$PatchCache$\Managed\D7314F9862C648A4DB8BE2A5B47BE100
+c:\Windows\Installer\$PatchCache$\Managed\DDA39468D428E8B4DB27C8D5DC5CA217
+c:\Windows\Installer\$PatchCache$\Managed\DFC90B5F2B0FFA63D84FD16F6BF37C4B
+c:\Windows\Installer\$PatchCache$\Managed\EFEE0228DC83E77358593193D847A0EC
+c:\Windows\Installer\$PatchCache$\Managed\000041091A0090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\000041091A0090400000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004109440090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109510090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109511090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109610090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109611090400100000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109711090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109810090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109910090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109A10090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109A10090400000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004109A20000000100000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109A20000000100000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004109A20090400100000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109AB0090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109B10090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109C20090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109E60090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109E60090400000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004109F10090400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109F10090400000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004109F100A0C00000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109F100A0C00000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004109F100C0400000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004109F100C0400000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\00004119110000000000000000F01FEC\14.0.4763
+c:\Windows\Installer\$PatchCache$\Managed\00004119110000000000000000F01FEC\14.0.6029
+c:\Windows\Installer\$PatchCache$\Managed\1007C6B46D7C017319E3B52CF3EC196E\9.0.30729
+c:\Windows\Installer\$PatchCache$\Managed\4E56ADF164C7AA9479127A4321D5863F\11.0.6000
+c:\Windows\Installer\$PatchCache$\Managed\52BFB8AF84FBB8F488953B8001471509\1.18.11
+c:\Windows\Installer\$PatchCache$\Managed\6A262021B4A79884EA585F5E86D86338\1.0.254
+c:\Windows\Installer\$PatchCache$\Managed\6A7105EE52579EE499ADE21F6F1CB6B1\4.1.129
+c:\Windows\Installer\$PatchCache$\Managed\6F9E66FF7E38E3A3FA41D89E8A906A4A\9.0.21022
+c:\Windows\Installer\$PatchCache$\Managed\AC0FD02F929562C45A10DF1BF9FDA005\5.0.140
+c:\Windows\Installer\$PatchCache$\Managed\C173E5AD3336A8D3394AF65D2BB0CCE6\10.0.30319
+c:\Windows\Installer\$PatchCache$\Managed\c1c4f01781cc94c4c8fb1542c0981a2a\8.0.61001
+c:\Windows\Installer\$PatchCache$\Managed\CFD2C1F142D260E3CB8B271543DA9F98\9.0.30729
+c:\Windows\Installer\$PatchCache$\Managed\D20352A90C039D93DBF6126ECE614057\9.0.30729
+c:\Windows\Installer\$PatchCache$\Managed\D7314F9862C648A4DB8BE2A5B47BE100\1.0.0
+c:\Windows\Installer\$PatchCache$\Managed\DDA39468D428E8B4DB27C8D5DC5CA217\4.20.9870
+c:\Windows\Installer\$PatchCache$\Managed\DFC90B5F2B0FFA63D84FD16F6BF37C4B\4.0.30319
+c:\Windows\Installer\$PatchCache$\Managed\EFEE0228DC83E77358593193D847A0EC\9.0.30729
+c:\Windows\Installer\$PatchCache$\UnManaged\S-1-5-21-2907693122-3731073314-3368902185-500
+c:\Windows\Media\Desktop.ini
+c:\Windows\Media\Afternoon\Desktop.ini
+c:\Windows\Media\Calligraphy\Desktop.ini
+c:\Windows\Media\Characters\Desktop.ini
+c:\Windows\Media\Cityscape\Desktop.ini
+c:\Windows\Media\Delta\Desktop.ini
+c:\Windows\Media\Festival\Desktop.ini
+c:\Windows\Media\Garden\Desktop.ini
+c:\Windows\Media\Heritage\Desktop.ini
+c:\Windows\Media\Landscape\Desktop.ini
+c:\Windows\Media\Quirky\Desktop.ini
+c:\Windows\Media\Raga\Desktop.ini
+c:\Windows\Media\Savanna\Desktop.ini
+c:\Windows\Media\Sonata\Desktop.ini
+c:\Windows\Offline Web Pages\desktop.ini
+c:\Windows\System32\7B296FB0-376B-497e-B012-9C450E1B7327-5P-0.C7483456-A289-439d-8115-601632D005A0
+c:\Windows\System32\7B296FB0-376B-497e-B012-9C450E1B7327-5P-1.C7483456-A289-439d-8115-601632D005A0
+c:\Windows\System32\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-ums-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\System32\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\System32\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\System32\api-ms-win-security-lsalookup-l1-1-0.dll
+c:\Windows\System32\api-ms-win-security-sddl-l1-1-0.dll
+c:\Windows\System32\api-ms-win-service-core-l1-1-0.dll
+c:\Windows\System32\api-ms-win-service-management-l1-1-0.dll
+c:\Windows\System32\api-ms-win-service-management-l2-1-0.dll
+c:\Windows\System32\api-ms-win-service-winsvc-l1-1-0.dll
+c:\Windows\System32\desktop.ini
+c:\Windows\System32\drivers\103C_HP_cNB_Pavilion dv7 Notebook PC_Y5335KV_0U_QCNF0284F5V_E598915-001_4A_I144B_SHP_V65.19_F.09_T100622_WU3-0_L409_M3894_J640_7Intel_8655_92.40_#100103_N_(WQ635UA#ABA)_XMOBILE_CN10_Z_2048D100000242B20000020000.MRK
+c:\Windows\System32\drivers\dvmio.sys
+c:\Windows\System32\drivers\Msft_Kernel_SynTP_01009.Wdf
+c:\Windows\System32\drivers\Msft_Kernel_WinUSB_01007.Wdf
+c:\Windows\System32\drivers\Msft_Kernel_xusb21_01009.Wdf
+c:\Windows\System32\drivers\Msft_User_WpdFs_01_09_00.Wdf
+c:\Windows\System32\drivers\Msft_User_WpdMtpDr_01_09_00.Wdf
+c:\Windows\System32\DriverStore\FileRepository\dvmio.inf_amd64_neutral_06a443567e6fe501\dvmio.inf
+c:\Windows\System32\DriverStore\FileRepository\dvmio.inf_amd64_neutral_06a443567e6fe501\dvmio64.cat
+c:\Windows\System32\DriverStore\FileRepository\dvmio.inf_amd64_neutral_06a443567e6fe501\x64\dvmio.sys
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\9e4f8000-21ff-4921-941b-ff7e0694ef1d
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\a9653e33-6a37-45ba-9314-bda2e9fb92cd
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\f2528122-a035-47e1-8780-9cc3a440bc5f
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\Preferred
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\4d02e9c0-b39b-4746-9dfa-5336ef3c0aa9
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\4ebd40a0-57b2-4d11-b061-62efc0ac1383
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\66941ddd-caf4-455d-a985-a3285a568d9c
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\67e6360e-96ac-426d-8520-c37b3c12cd43
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\83328f57-d322-46ee-9dee-d8f2ee08057e
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\b3167e66-dcd7-4967-a810-ead6c44254b1
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\f22e410f-f947-4e08-8f2a-8f65df603f8d
+c:\Windows\System32\Microsoft\Protect\S-1-5-18\User\Preferred
+c:\Windows\System32\Microsoft\Protect\S-1-5-19\9f6fb501-1217-43bd-958b-5ff31e051287
+c:\Windows\System32\Microsoft\Protect\S-1-5-19\Preferred
+c:\Windows\System32\Microsoft\Protect\S-1-5-20\087ac50e-ee84-4abf-b1b9-adc45927b9a6
+c:\Windows\System32\Microsoft\Protect\S-1-5-20\Preferred
+c:\Windows\System32\SMI\Store\Machine\schema.dat.LOG
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT.LOG1
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT.LOG2
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{0f850b91-f876-11de-89e6-cf3f72768324}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{0f850b91-f876-11de-89e6-cf3f72768324}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{0f850b91-f876-11de-89e6-cf3f72768324}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{641e3cae-f1fa-11e0-9416-080027004c6f}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{641e3cae-f1fa-11e0-9416-080027004c6f}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{641e3cae-f1fa-11e0-9416-080027004c6f}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{846ee3d3-7039-11de-9d20-001d09fa5a1c}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{846ee3d3-7039-11de-9d20-001d09fa5a1c}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{846ee3d3-7039-11de-9d20-001d09fa5a1c}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{ae902403-f1d6-11e0-ab40-0026c7627fbe}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{ae902403-f1d6-11e0-ab40-0026c7627fbe}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{ae902403-f1d6-11e0-ab40-0026c7627fbe}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{ae90245c-f1d6-11e0-ab40-0026c7627fbe}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{ae90245c-f1d6-11e0-ab40-0026c7627fbe}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{ae90245c-f1d6-11e0-ab40-0026c7627fbe}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{e136dbd1-12ad-11e1-b420-f3bfc4f7456b}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{e136dbd1-12ad-11e1-b420-f3bfc4f7456b}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{e136dbd1-12ad-11e1-b420-f3bfc4f7456b}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{eac9597e-f1f0-11e0-a7f1-c2d8926da22d}.TM.blf
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{eac9597e-f1f0-11e0-a7f1-c2d8926da22d}.TMContainer00000000000000000001.regtrans-ms
+c:\Windows\System32\SMI\Store\Machine\SCHEMA.DAT{eac9597e-f1f0-11e0-a7f1-c2d8926da22d}.TMContainer00000000000000000002.regtrans-ms
+c:\Windows\SysWOW64\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-security-lsalookup-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-security-sddl-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-service-core-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-service-management-l1-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-service-management-l2-1-0.dll
+c:\Windows\SysWOW64\api-ms-win-service-winsvc-l1-1-0.dll
+c:\Windows\SysWOW64\drivers\103C_HP_cNB_Pavilion dv7 Notebook PC_Y5335KV_0U_QCNF0284F5V_E598915-001_4A_I144B_SHP_V65.19_F.09_T100622_WU3-0_L409_M3894_J640_7Intel_8655_92.40_#100103_N_(WQ635UA#ABA)_XMOBILE_CN10_Z_2048D100000242B20000020000.MRK
+c:\Windows\Tasks\SA.DAT
+c:\Windows\Web\Wallpaper\Architecture\Desktop.ini
+c:\Windows\Web\Wallpaper\Characters\Desktop.ini
+c:\Windows\Web\Wallpaper\Landscapes\Desktop.ini
+c:\Windows\Web\Wallpaper\Nature\Desktop.ini
+c:\Windows\Web\Wallpaper\Scenes\Desktop.ini
+c:\Windows\winsxs\amd64_microsoft-windows-baseapinamespace_31bf3856ad364e35_6.1.7600.16385_none_a1f61b7193522189\api-ms-win-core-ums-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-baseapinamespace_31bf3856ad364e35_6.1.7601.17514_none_a4272f399040a523\api-ms-win-core-ums-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-mail-app_31bf3856ad364e35_6.1.7600.16385_none_4d4d1f2f696639a2\WinMail.exe
+c:\Windows\winsxs\amd64_microsoft-windows-mail-app_31bf3856ad364e35_6.1.7601.17514_none_4f7e32f76654bd3c\WinMail.exe
+c:\Windows\winsxs\amd64_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_c8b8ba7bcb4e2c66\api-ms-win-security-lsalookup-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_c8b8ba7bcb4e2c66\api-ms-win-security-sddl-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_c8b8ba7bcb4e2c66\api-ms-win-service-core-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_c8b8ba7bcb4e2c66\api-ms-win-service-management-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_c8b8ba7bcb4e2c66\api-ms-win-service-management-l2-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_c8b8ba7bcb4e2c66\api-ms-win-service-winsvc-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_66a6e19d9580f9e3\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_66c2596d956d1920\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\winsxs\amd64_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_68a9b6bd92929e63\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\winsxs\Temp\PendingDeletes
+c:\Windows\winsxs\x86_microsoft-windows-mail-app_31bf3856ad364e35_6.1.7600.16385_none_f12e83abb108c86c\WinMail.exe
+c:\Windows\winsxs\x86_microsoft-windows-mail-app_31bf3856ad364e35_6.1.7601.17514_none_f35f9773adf74c06\WinMail.exe
+c:\Windows\winsxs\x86_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_6c9a1ef812f0bb30\api-ms-win-security-lsalookup-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_6c9a1ef812f0bb30\api-ms-win-security-sddl-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_6c9a1ef812f0bb30\api-ms-win-service-core-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_6c9a1ef812f0bb30\api-ms-win-service-management-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_6c9a1ef812f0bb30\api-ms-win-service-management-l2-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minioapinamespace_31bf3856ad364e35_6.1.7600.16385_none_6c9a1ef812f0bb30\api-ms-win-service-winsvc-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16385_none_0a884619dd2388ad\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7600.16850_none_0aa3bde9dd0fa7ea\api-ms-win-security-base-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-console-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-datetime-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-debug-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-delayload-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-errorhandling-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-fibers-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-file-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-handle-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-heap-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-interlocked-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-io-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-libraryloader-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-localization-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-localregistry-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-memory-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-misc-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-namedpipe-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-processenvironment-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-processthreads-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-profile-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-rtlsupport-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-string-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-synch-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-sysinfo-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-threadpool-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-util-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-core-xstate-l1-1-0.dll
+c:\Windows\winsxs\x86_microsoft-windows-minkernelapinamespace_31bf3856ad364e35_6.1.7601.17651_none_0c8b1b39da352d2d\api-ms-win-security-base-l1-1-0.dll

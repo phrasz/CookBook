@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1342367853 source:d:\my programing\basics\networking\winsock\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fcntl.h>
+	<process.h>
+	<stddef.h>
+	<windows.h>
+	<sys\stat.h>
+	<io.h>
+	<pthread.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<fcntl.h>
+	<netdb.h>
+

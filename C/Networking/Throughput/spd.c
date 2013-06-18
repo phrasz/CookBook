@@ -1,0 +1,395 @@
+/*
+**** Simple Packet Dumper ****
+My own libpcap-based network protocols dumper.
+I wrote it just for practice and to learn more about
+most-common TCP/IP protocols.
+
+Author: A. Alejandro Hernandez Hernandez
+Handle: nitr0us
+E-mail: nitrousenador[at]gmail[dot]com
+Country: Mexico
+
+$gcc spd.c -o spd -Wall -ggdb -lpcap
+
+Supported protocols:
++Datalink
+  - Ethernet
+
++Network
+  - IP
+  - ARP
+  - ICMP
+
++Transmission
+  - TCP
+  - UDP
+*/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<signal.h>
+#include<ctype.h>
+#include<unistd.h>
+#include<errno.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#ifndef __USE_BSD
+#define __USE_BSD	/* Use bsd-style IP header */
+#endif
+#include<netinet/ip.h>
+#ifndef __FAVOR_BSD
+#define __FAVOR_BSD	/* Use bsd-style TCP/UDP header */
+#endif
+#include<netinet/tcp.h>
+#include<netinet/udp.h>
+#include<netinet/ip_icmp.h>
+#include<netinet/if_ether.h>
+#include<net/if_arp.h>
+#include<pcap.h>
+
+#define error(texto, args)	do{\
+	fprintf(stderr, texto, args);\
+	exit(EXIT_FAILURE);\
+	} while(0)
+#define IPSIZE		sizeof(struct ip)
+#define TCPSIZE		sizeof(struct tcphdr)
+#define UDPSIZE		sizeof(struct udphdr)
+
+void usage(char *);
+void interrupt(int);
+void callback(u_char *, const struct pcap_pkthdr *, const u_char *);
+void dumpdata(char *, unsigned int);
+
+pcap_t		*hand;
+
+/// GLOBALS
+int IPcounter=0;	
+int counter=0;
+
+int main(int argc, char **argv)
+{
+	char			errbuf[PCAP_ERRBUF_SIZE];
+	struct bpf_program	compiled;
+	bpf_u_int32		ip, netmask;
+
+	if(getuid() != (uid_t) 0){
+		fprintf(stderr, "You must be root(uid=0)\n");
+		exit(EXIT_FAILURE);
+	}
+
+	if(argc < 2)
+		usage(*argv);
+
+	signal(SIGINT, interrupt);
+
+	printf("-=[-----------------------------------------]=-\n");
+	printf("-=[--------- Simple Packet Dumper ----------]=-\n");
+	printf("-=[------------- libpcap based -------------]=-\n");
+	printf("-=[-----------------------------------------]=-\n");
+	printf("-=[--------------=[ nitr0us ]=--------------]=-\n");
+	printf("-=[----- nitrousenador[at]gmail[dot]com ----]=-\n");
+	printf("-=[-----------------------------------------]=-\n");
+	printf("-=[---------------- Mexico -----------------]=-\n");
+	printf("-=[-----------------------------------------]=-\n\n");
+
+	printf("-=[----- LIBPCAP -----]=-\n");
+	printf("Interface: %s\n", argv[1]);
+	if((hand = pcap_open_live(argv[1], BUFSIZ, 1, -1, errbuf)) == NULL)
+		error("pcap_open_live(): %s\n", errbuf);
+	printf("pcap_open_live(): [OK]\n");
+
+	if(pcap_lookupnet(argv[1], &ip, &netmask, errbuf) == -1)
+		error("pcap_lookupnet(): %s\n", errbuf);
+	printf("pcap_lookupnet(): [OK]\n");
+
+	if(argv[2]){
+		printf("Filter: \"%s\"\n", argv[2]);
+		if(pcap_compile(hand, &compiled, argv[2], 0, ip) == -1){
+			fprintf(stderr, "pcap_compile()\n");
+			exit(EXIT_FAILURE);
+		}
+		printf("pcap_compile(): [OK]\n");
+
+		if(pcap_setfilter(hand, &compiled) == -1){
+			fprintf(stderr, "pcap_setfilter()\n");
+			exit(EXIT_FAILURE);
+		}
+		printf("pcap_setfilter(): [OK]\n");
+	}
+
+	printf("-=[----- TRAFFIC -----]=-\n");
+	pcap_loop(hand, -1, callback, NULL);
+
+	return 0;
+}
+
+void usage(char *prog)
+{
+	char		errbuf[PCAP_ERRBUF_SIZE];
+	pcap_if_t	*devices, *ifptr;
+	pcap_addr_t	*addrptr;
+
+	fprintf(stderr, "Usage: %s <interface> [bpf_filter]\n", prog);
+	fprintf(stderr, "Available Interfaces: \n");
+	fprintf(stderr, "\tName\tAddress(es)\t\tDescription\n");
+
+	if(pcap_findalldevs(&devices, errbuf) == -1)
+		error("pcap_findalldevs(): %s\n", errbuf);
+	else{
+		for(ifptr = devices; ifptr; ifptr = ifptr->next){
+			if(strcmp("any", ifptr->name) == 0)
+					continue;
+
+			printf("\t%s\t", ifptr->name);
+
+			for(addrptr = ifptr->addresses; addrptr; addrptr = addrptr->next)
+				if(addrptr->addr)
+					if(addrptr->addr->sa_family == AF_INET)
+						printf("%s ", inet_ntoa(((struct sockaddr_in *) addrptr->addr)->sin_addr));
+
+			printf("\t\t%s\n", ifptr->description ? ifptr->description : ifptr->flags & PCAP_IF_LOOPBACK ? "Loopback Interface" : " ");
+	int counter =0;
+		}
+
+		pcap_freealldevs(devices);
+	}
+
+	exit(EXIT_SUCCESS);
+}
+
+void interrupt(int signum)
+{
+	printf("Received Signal [%d]: %s\n", signum, sys_siglist[signum]);
+	printf("Exiting...\n");
+
+	pcap_close(hand);
+
+	exit(EXIT_SUCCESS);
+}
+
+void callback(u_char *args, const struct pcap_pkthdr *pkthdr, const u_char *packet)
+{
+	char			dlink;
+	char			*dataptr;
+	struct ether_header	*ETHER;
+	struct ether_arp	*ARP;
+	struct ip		*IP;
+	struct udphdr		*UDP;
+	struct tcphdr		*TCP;
+	struct icmphdr		*ICMP;
+
+
+	printf("-------------------------------------------------------------------------------\n");
+
+	/***** DATALINK *****/
+	if((dlink = pcap_datalink(hand)) != DLT_EN10MB){ /* Ethernet */
+		fprintf(stderr, "Datalink protocol not supported: %s = %s\n",\
+				pcap_datalink_val_to_name(dlink),\
+				pcap_datalink_val_to_description(dlink));
+
+		return;
+	}
+
+	//printf("****** Ethernet ******\n");
+	ETHER = (struct ether_header *) packet;
+	printf("smac: %.2x:%.2x:%.2x:%.2x:%.2x:%.2x",\
+		ETHER->ether_shost[0],\
+		ETHER->ether_shost[1],\
+		ETHER->ether_shost[2],\
+		ETHER->ether_shost[3],\
+		ETHER->ether_shost[4],\
+		ETHER->ether_shost[5]);
+	//printf(" ---> ");
+	/*printf("dmac: %.2x:%.2x:%.2x:%.2x:%.2x:%.2x\n",\
+		ETHER->ether_dhost[0],\
+		ETHER->ether_dhost[1],\
+		ETHER->ether_dhost[2],\
+		ETHER->ether_dhost[3],\
+		ETHER->ether_dhost[4],\
+		ETHER->ether_dhost[5]);
+	*/	
+	//printf("type (0x%.4x): ", ntohs(ETHER->ether_type));
+
+
+	/***** NETWORK *****/
+	switch(ntohs(ETHER->ether_type)){
+		case ETHERTYPE_IP:
+			IPcounter++;
+			printf("IP\n");
+			printf("****** IP ******\n");
+			IP  = (struct ip *) (packet + ETHER_HDR_LEN);
+			printf("src: %s ---> ", inet_ntoa(IP->ip_src));
+			printf("dst: %s\t\tversion: %d\n", inet_ntoa(IP->ip_dst), IP->ip_v);
+			printf("hdrlen: %d\t\ttos: 0x%x\tlen: %d\tttl: %d\n",\
+				IP->ip_hl * sizeof(int),\
+				IP->ip_tos,\
+				ntohs(IP->ip_len),\
+				IP->ip_ttl);
+			printf("ip_off: 0x%.4x (%s)\tprot: %d (%s)\t\tchecksum: 0x%.4x\n",\
+				ntohs(IP->ip_off),\
+				ntohs(IP->ip_off) == IP_DF ? "DF" : "",\
+				IP->ip_p,\
+				IP->ip_p == IPPROTO_TCP ? "TCP" : IP->ip_p == IPPROTO_UDP ? "UDP" : IP->ip_p == IPPROTO_ICMP ? "ICMP" : "",\
+				ntohs(IP->ip_sum));
+			break;
+	/*	case ETHERTYPE_ARP:
+			printf("ARP\n");
+			printf("****** ARP ******\n");
+			ARP = (struct ether_arp *) (packet + ETHER_HDR_LEN);
+			printf("htype: 0x%.4x (%s)\tptype: 0x%.4x\toperation(%d): %s\n",\
+				ntohs(ARP->arp_hrd),\
+				ntohs(ARP->arp_hrd) == ARPHRD_ETHER ? "HW ETHERNET" : "",\
+				ntohs(ARP->arp_pro),\
+				ntohs(ARP->arp_op),\
+				ntohs(ARP->arp_op) == ARPOP_REQUEST ? "ARP REQUEST" : ntohs(ARP->arp_op) == ARPOP_REPLY ? "ARP REPLY" : "");
+			printf("s_MAC: %.2x:%.2x:%.2x:%.2x:%.2x:%.2x - s_IP: %d.%d.%d.%d\n",\
+				ARP->arp_sha[0],\
+				ARP->arp_sha[1],\
+				ARP->arp_sha[2],\
+				ARP->arp_sha[3],\
+				ARP->arp_sha[4],\
+				ARP->arp_sha[5],\
+				ARP->arp_spa[0], ARP->arp_spa[1], ARP->arp_spa[2], ARP->arp_spa[3]);
+			printf("d_MAC: %.2x:%.2x:%.2x:%.2x:%.2x:%.2x - d_IP: %d.%d.%d.%d\n",\
+				ARP->arp_tha[0],\
+				ARP->arp_tha[1],\
+				ARP->arp_tha[2],\
+				ARP->arp_tha[3],\
+				ARP->arp_tha[4],\
+				ARP->arp_tha[5],\
+				ARP->arp_tpa[0], ARP->arp_tpa[1], ARP->arp_tpa[2], ARP->arp_tpa[3]);
+			if(ntohs(ARP->arp_op) == ARPOP_REQUEST)
+				printf("WHO-HAS %d.%d.%d.%d TELL %d.%d.%d.%d\n",\
+					ARP->arp_tpa[0], ARP->arp_tpa[1], ARP->arp_tpa[2], ARP->arp_tpa[3],\
+					ARP->arp_spa[0], ARP->arp_spa[1], ARP->arp_spa[2], ARP->arp_spa[3]);
+			if(ntohs(ARP->arp_op) == ARPOP_REPLY)
+				printf("%d.%d.%d.%d IS AT %.2x:%.2x:%.2x:%.2x:%.2x:%.2x\n",\
+					ARP->arp_spa[0], ARP->arp_spa[1], ARP->arp_spa[2], ARP->arp_spa[3],\
+					ARP->arp_sha[0],\
+					ARP->arp_sha[1],\
+					ARP->arp_sha[2],\
+					ARP->arp_sha[3],\
+					ARP->arp_sha[4],\
+					ARP->arp_sha[5]);
+			return;
+		case ETHERTYPE_REVARP:
+			printf("RARP\n");
+			printf("****** RARP ******\n");
+			//Not supported 
+			return;
+	*/	
+		default:
+			return;
+	}
+
+	/***** TRANSPORT *****/
+	switch(IP->ip_p){
+	/*	case IPPROTO_TCP:
+			printf("****** TCP ******\n");
+			TCP = (struct tcphdr *) (packet + ETHER_HDR_LEN + IPSIZE);
+			printf("sport: %d\tdport: %d\t\tseq: 0x%x\t\tack: 0x%x\n",\
+				ntohs(TCP->th_sport),\
+				ntohs(TCP->th_dport),\
+				ntohl(TCP->th_seq),\
+				ntohl(TCP->th_ack));
+			printf("options: %d bytes\t", (TCP->th_off * sizeof(int)) - TCPSIZE); // TCP->th_off x 4 = N bytes of header 
+			printf("flags:");
+			if(TCP->th_flags & TH_FIN)
+				printf(" FIN");
+			if(TCP->th_flags & TH_SYN)
+				printf(" SYN");
+			if(TCP->th_flags & TH_RST)
+				printf(" RST");
+			if(TCP->th_flags & TH_PUSH)
+				printf(" PUSH");
+			if(TCP->th_flags & TH_ACK)
+				printf(" ACK");
+			if(TCP->th_flags & TH_URG)
+				printf(" URG");
+
+			printf("\nwin: %d\t\tchecksum: 0x%.4x\t\turgp: 0x%x\n",\
+				ntohs(TCP->th_win),\
+				ntohs(TCP->th_sum),\
+				ntohs(TCP->th_urp));
+
+			if((TCP->th_flags & TH_PUSH) && (TCP->th_flags & TH_ACK)){
+				printf("data (%d):\n", ntohs(IP->ip_len) - IPSIZE - TCP->th_off * sizeof(int)); // Total IP's lenght - N bytes of TCP header = data
+				dataptr = (char *) (packet + ETHER_HDR_LEN + IPSIZE + TCP->th_off * sizeof(int));
+				dumpdata(dataptr, ntohs(IP->ip_len) - IPSIZE - TCP->th_off * sizeof(int));
+			}
+			break;
+		*/
+		case IPPROTO_UDP:
+			printf("****** UDP ******\n");
+			UDP = (struct udphdr *) (packet + ETHER_HDR_LEN + IPSIZE);
+
+			printf("sport: %d\t\tdport: %d\tlenght: %d\tchecksum: 0x%.4x\n",\
+				ntohs(UDP->uh_sport),\
+				ntohs(UDP->uh_dport),\
+				ntohs(UDP->uh_ulen),\
+				ntohs(UDP->uh_sum));
+
+			printf("data (%d):\n", ntohs(IP->ip_len) - IPSIZE - UDPSIZE);
+			if (ntohs(UDP->uh_dport)==1337){
+				counter++;
+				printf("\n\n[%i][%i]1337 PACKET!!!",IPcounter,counter);
+			}
+
+			dataptr = (char *) (packet + ETHER_HDR_LEN + IPSIZE + UDPSIZE);
+			//dumpdata(dataptr, ntohs(IP->ip_len) - IPSIZE - UDPSIZE);
+			break;
+		/*case IPPROTO_ICMP:	// ICMP isn't really a transport protocol 
+			printf("****** ICMP ******\n");
+			ICMP = (struct icmphdr *) (packet + ETHER_HDR_LEN + IPSIZE);
+
+			printf("type: %d\t\tcode: %d\t\tchecksum: 0x%.4x\t\t", ICMP->type, ICMP->code, ntohs(ICMP->checksum));
+			switch(ICMP->type){
+				case ICMP_ECHOREPLY:
+					printf("ECHO REPLY\n");
+					break;
+				case ICMP_DEST_UNREACH:
+					printf("DESTINATION UNREACHEABLE\n");
+					break;
+				case ICMP_ECHO:
+					printf("ECHO REQUEST\n");
+					break;
+			}
+			printf("id: %d\tseq: %d\n", ntohs(ICMP->un.echo.id), ntohs(ICMP->un.echo.sequence));
+			break;
+		*/		
+		default:
+			fprintf(stderr, "Transport protocol not supported (0x%x)\n", IP->ip_p);
+	}
+}
+
+void dumpdata(char *data, unsigned int n)
+{
+	unsigned int	x = 0;
+
+	while(n-- && ++x){
+		if((x % 16) == 1)
+			putchar('|');
+
+		if(isprint(*data))
+			printf("  %c", *data++);
+		else if(*data == 0x0a){
+			printf(" CR");
+			*data++;
+		}
+		else if(*data == 0x0d){
+			printf(" LF");
+			*data++;
+		}
+		else
+			printf(" %.2x", (unsigned char ) *data++);
+
+		if((x % 16) == 0)
+			printf("  |\n");
+		
+	}
+
+	if((x % 16) != 0)
+		printf("  |\n");
+}

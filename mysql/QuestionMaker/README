@@ -1,0 +1,18 @@
+
+   _____  .__        .__        
+  /     \ |__| _____ |__|______ 
+ /  \ /  \|  |/     \|  \_  __ \
+/    Y    \  |  Y Y  \  ||  | \/
+\____|__  /__|__|_|  /__||__|   
+        \/         \/         
+Version .1 Alpha
+
+TL;DR: Mimir allows the generation of the needed files to 
+       create and render a question/answer environment in PHP/MySQL
+
+===============
+| Change Log: |
+===============
+
+2013-04-30:
+-----------

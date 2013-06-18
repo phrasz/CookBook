@@ -1,0 +1,40 @@
+- It is not always clear when the game is paused, leading to confusing
+  situations where the hint button and normal moves don't seem to work
+  anymore. Unpausing the game is the solution, obviously.
+
+- Occasionally when using alt-tab or other tab combinations, the text
+  field in the 'load' and 'save' dialog will stop taking normal typed
+  input. Backspace and other control characters do still work. This is
+  an issue (possible bug) related to the allegro GUI, I'm working on
+  getting it fixed.
+
+- Using allegro 4.1.8 WIP in linux, the game sometimes hangs when a key is
+  pressed. This seems to be a problem related to allegro 4.1.8, other
+  versions (4.0.3) don't show this behaviour.
+
+- I've seen an assert in one of the allegro drawing routines triggered
+  several times. This probably means that in a release build a
+  coredump will occur, due to a NULL pointer dereference or something
+  similar. Unfortunately I have not been able to track down the
+  cause of the problem yet.
+
+- The computer may sometimes skip a corner when it should, according
+  to common sense, take it right away. This is a remaining balance
+  issue between the scoring of positions and the number of stones. It
+  should not happen in the early game anymore, but later in the game
+  it may if the computer favors having more stones over getting the
+  corner. Keep in mind that situations where the computer can tell
+  that he will get the corner anyway the next turn, don't count in
+  this respect.
+
+- When playing against Xreversi at ply 3, the computer may select a
+  move which leads to a situation where it has no stones left around
+  move number 10. This is due to the low ply level: it cannot see that
+  one turn later the opponent will be able to capture almost all it's
+  stones. Playing at one ply level higher solves the problem.
+
+- The computer may report that the player is going to win, while this
+  is only so if the player selects the moves the computer has thought
+  out. If the player selects very silly moves, he may still be able to
+  loose :-) Once the computer reports it is going to win itself,
+  there's no way out anymore.
