@@ -50,14 +50,14 @@
 #include <stdlib.h>         // Needed for exit()
 #include <string.h>         // Needed for memcpy() and strcpy()
 #include <fcntl.h>          // Needed for file i/o stuff
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
   #include <process.h>      // Needed for _beginthread() and _endthread()
   #include <stddef.h>       // Needed for _threadid
   #include <windows.h>      // Needed for all Winsock stuff
   #include <sys\stat.h>     // Needed for file i/o constants
   #include <io.h>           // Needed for file i/o stuff
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
   #include <pthread.h>      // Needed for pthread_create() and pthread_exit()
   #include <sys/stat.h>     // Needed for file i/o constants
   #include <sys/types.h>    // Needed for sockets stuff
@@ -79,17 +79,17 @@
 #define  BUF_SIZE            4096     // Buffer size (big enough for a GET)
 
 //----- Function prototypes -------------------------------------------------
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
   void handle_get(void *in_arg);      // Windows thread function to handle GET
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
   void *handle_get(void *in_arg);     // POSIX thread function to handle GET
 #endif
 
 //===== Main program ========================================================
 int main(void)
 {
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
   WORD wVersionRequested = MAKEWORD(1,1);    // Stuff for WSA functions
   WSADATA wsaData;                           // Stuff for WSA functions
 #endif
@@ -98,16 +98,16 @@ int main(void)
   int                  client_s;             // Client socket descriptor
   struct sockaddr_in   client_addr;          // Client Internet address
   struct in_addr       client_ip_addr;       // Client IP address
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
   int                  addr_len;             // Internet address length
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
   socklen_t            addr_len;             // Internet address length
   pthread_t            thread_id;            // Thread ID
 #endif
   int                  retcode;              // Return code
 
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
   // This stuff initializes winsock
   WSAStartup(wVersionRequested, &wsaData);
 #endif
@@ -139,10 +139,10 @@ int main(void)
       exit(1);
     }
 
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
     if (_beginthread(handle_get, 4096, (void *)client_s) < 0)
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     if (pthread_create(&thread_id, NULL, handle_get, (void *)client_s) != 0)
 #endif
     {
@@ -157,10 +157,10 @@ int main(void)
 //===========================================================================
 //=  This is is the thread function to handle the GET                       =
 //===========================================================================
-#ifdef _WIN32 || _WIN64
-void handle_get(void *in_arg)
+#if defined(_WIN32) || defined(_WIN64)
+void handle_get(void *in_arg){
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
 void *handle_get(void *in_arg)
 #endif
 {
@@ -183,11 +183,11 @@ void *handle_get(void *in_arg)
   if (retcode <= 0)
   {
     printf("ERROR - Receive failed --- probably due to dropped connection \n");
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
     closesocket(client_s);
     _endthread();
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     close(client_s);
     pthread_exit(NULL);
 #endif
@@ -200,11 +200,11 @@ void *handle_get(void *in_arg)
   if (strcmp(command, "GET") != 0)
   {
     printf("ERROR - Not a GET --- received command = '%s' \n", command);
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
     closesocket(client_s);
     _endthread();
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     close(client_s);
     pthread_exit(NULL);
 #endif
@@ -212,10 +212,10 @@ void *handle_get(void *in_arg)
 
   // It must be a GET... open the requested file
   //  - Start at 2nd char to get rid of leading "\"
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
   fh = open(&file_name[1], O_RDONLY | O_BINARY, S_IREAD | S_IWRITE);
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
   fh = open(&file_name[1], O_RDONLY, S_IREAD | S_IWRITE);
 #endif
 
@@ -227,11 +227,11 @@ void *handle_get(void *in_arg)
     send(client_s, out_buf, strlen(out_buf), 0);
     strcpy(out_buf, MESS_404);
     send(client_s, out_buf, strlen(out_buf), 0);
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
     closesocket(client_s);
     _endthread();
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     close(client_s);
     pthread_exit(NULL);
 #endif
@@ -245,11 +245,11 @@ void *handle_get(void *in_arg)
   {
     printf("SECURITY VIOLATION --- trying to read '%s' \n", &file_name[1]);
     close(fh);
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
     closesocket(client_s);
     _endthread();
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     close(client_s);
     pthread_exit(NULL);
 #endif
@@ -271,11 +271,11 @@ void *handle_get(void *in_arg)
 
   // Close the file, close the client socket, and end the thread
   close(fh);
-#ifdef _WIN32 || _WIN64
+#if defined(_WIN32) || defined(_WIN64)
     closesocket(client_s);
     _endthread();
 #endif
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     close(client_s);
     pthread_exit(NULL);
 #endif
