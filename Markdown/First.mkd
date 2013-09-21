@@ -1,0 +1,45 @@
+# Markdown syntax
+
+## Block elements
+### This
+#### Is 
+##### Tabbed
+###### Over Headings 1-6 and alternate headings
+
+----------------------------------
+
+===
+
++ Unordered List
+- Unordered List
+* Unordered List
+1. Ordered List
+> Blockquote
+
+## Inline elements
+- *italic* / _italic_ , **bold** / __bold__
+- [Link text](http://domain.com) or <http://domain.com> or http://domain.com
+<!-- - ![Alt text](/path/to/img.jpg) !-->
+<!-- - ![alt attribute text](./image.png "Title attribute text") ~ !-->
+- `code`
+- HTML comment: <!-- HTML comment -->
+
+## Bugs
+- `<html>` tags aren't highlighted
+- *Spaces between italic words (_only with_ the single asterisk syntax)*
+- _Styles that **should overlap** do not_
+- (http://example.net "with optional title not hightlighted")
+
+```JavaScript
+ var s = "JavaScript syntax highlighting";
+ alert(s);
+ ```
+ 
+ ## Markdown plus tables ##
+
+| Header | Header | Right  |
+| ------ | ------ | -----: |
+|  Cell  |  Cell  |   $10  |
+|  Cell  |  Cell  |   $20  |
+
+<!-- [![Rolled!](http://img.youtube.com/vi/oHg5SJYRHA0/0.jpg)](http://www.youtube.com/watch?v=oHg5SJYRHA0) !-->

@@ -1,0 +1,37 @@
+<h1 id="introduction">Introduction</h1>
+<p>This is some code I stole from the interwebz. Lolz!</p>
+<h1 id="code">Code</h1>
+<h2 id="in-line-coding">In Line Coding</h2>
+<p>code: <code>printf(&quot;\n Hello World!&quot;);</code></p>
+<p>CMD: Run:<code>ipconfig /all</code></p>
+<h2 id="block-quote">Block Quote</h2>
+<pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;pthread.h&gt;</span>
+<span class="ot">#include &lt;stdio.h&gt;</span>
+<span class="ot">#include &lt;stdlib.h&gt;</span>
+<span class="ot">#define NUM_THREADS 5</span>
+
+<span class="dt">void</span> *PrintHello(<span class="dt">void</span> *threadid)
+{
+   <span class="dt">long</span> tid;
+   tid = (<span class="dt">long</span>)threadid;
+   printf(<span class="st">&quot;Hello World! It&#39;s me, thread #%ld!</span><span class="ch">\n</span><span class="st">&quot;</span>, tid);
+   pthread_exit(NULL);
+}
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> *argv[])
+{
+   pthread_t threads[NUM_THREADS];
+   <span class="dt">int</span> rc;
+   <span class="dt">long</span> t;
+   <span class="kw">for</span>(t=<span class="dv">0</span>;t&lt;NUM_THREADS;t++){
+     printf(<span class="st">&quot;In main: creating thread %ld</span><span class="ch">\n</span><span class="st">&quot;</span>, t);
+     rc = pthread_create(&amp;threads[t], NULL, PrintHello, (<span class="dt">void</span> *)t);
+     <span class="kw">if</span> (rc){
+       printf(<span class="st">&quot;ERROR; return code from pthread_create() is %d</span><span class="ch">\n</span><span class="st">&quot;</span>, rc);
+       exit(-<span class="dv">1</span>);
+       }
+     }
+
+   <span class="co">/* Last thing that main() should do */</span>
+   pthread_exit(NULL);
+}</code></pre>
