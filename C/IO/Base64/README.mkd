@@ -1,0 +1,67 @@
+base64 Source from SourceForge
+==============================
+The following code is cloned from http://base64.sourceforge.net.
+
+Build
+-----
+gcc b64.c -o b64
+
+Help Output
+-----------
+```
+  b64      (Base64 Encode/Decode)      Bob Trower 08/03/01 
+           (C) Copr Bob Trower 1986-01.      Version 0.12R 
+  Usage:   b64 -option [-l<num>] [<FileIn> [<FileOut>]]
+  Purpose: This program is a simple utility that implements
+           Base64 Content-Transfer-Encoding (RFC1113).
+  Options: -e  encode to Base64   -h  This help text.
+           -d  decode from Base64 -?  This help text.
+  Note:    -l  use to change line size (from 72 characters)
+  Returns: 0 = success.  Non-zero is an error code.
+  ErrCode: 1 = Bad Syntax, 2 = File Open, 3 = File I/O
+  Example: b64 -e binfile b64file     <- Encode to b64
+           b64 -d b64file binfile     <- Decode from b64
+           b64 -e -l40 infile outfile <- Line Length of 40
+  Note:    Will act as a filter, but this should only be
+           used on text files due to translations made by
+           operating systems.
+  Source:  Source code and latest releases can be found at:
+           http://base64.sourceforge.net
+  Release: 0.12.00, Mon Feb 14 17:17:00 2011, ANSI-SOURCE C
+```
+
+Use Cases
+---------
+1. Encode File to Base64
+```
+Command:
+./b64 -e HelloFile 
+
+Expected Output:
+SGVsbG8gV29ybGQhCg==
+```
+2. Encode File to New File with Base64 Output
+```
+Command:
+./b64 -e HelloFile Saveb64Hello
+
+Expected Output: New file named "Saveb64Hello"
+```
+
+3. Decode Base64 File to ASCII
+```
+Command:
+./b64 -d Saveb64Hello 
+
+Expected Output:
+Hello World!
+```
+
+4. Decode File to New File with ASCII Output
+```
+Command:
+./b64 -d Save64Hello Hello
+
+Expected Output: New file named "Hello"
+```
+
