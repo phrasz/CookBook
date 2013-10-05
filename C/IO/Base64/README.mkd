@@ -32,7 +32,8 @@ Help Output
 
 Use Cases
 ---------
-1. Encode File to Base64
+Encode File to Base64
+
 ```
 Command:
 ./b64 -e HelloFile 
@@ -40,7 +41,8 @@ Command:
 Expected Output:
 SGVsbG8gV29ybGQhCg==
 ```
-2. Encode File to New File with Base64 Output
+Encode File to New File with Base64 Output
+
 ```
 Command:
 ./b64 -e HelloFile Saveb64Hello
@@ -48,7 +50,8 @@ Command:
 Expected Output: New file named "Saveb64Hello"
 ```
 
-3. Decode Base64 File to ASCII
+Decode Base64 File to ASCII
+
 ```
 Command:
 ./b64 -d Saveb64Hello 
@@ -57,7 +60,8 @@ Expected Output:
 Hello World!
 ```
 
-4. Decode File to New File with ASCII Output
+Decode File to New File with ASCII Output
+
 ```
 Command:
 ./b64 -d Save64Hello Hello
